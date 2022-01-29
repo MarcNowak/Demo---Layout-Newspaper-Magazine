@@ -1,25 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
+import './styles/bootstrap.scss';
+import './styles/global.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import MainLayout from './components/layout/MainLayout/MainLayout';
+import Homepage from './components/views/HomePage/HomePage';
+
+const App = () => (
+  <BrowserRouter>
+    <MainLayout>
+      <Route exact path={'/'} component={Homepage} />
+    </MainLayout>
+  </BrowserRouter>
+);
 
 export default App;

@@ -8,7 +8,7 @@ import LogoBar from '../LogoBar/LogoBar';
 import MenuBar from '../MenuBar/MenuBar';
 
 const Header = props => (
-  <header>
+  <header className={styles.root}>
     <TopBar />
     <LogoBar />
     <MenuBar />

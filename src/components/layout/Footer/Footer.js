@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 import styles from './Footer.module.scss';
 
 const Footer = ({ children }) => (
-  <footer>
-    <p>FOOTER</p>
+  <footer className={styles.root}>
+    <div>
+      <p>FOOTER</p>
+    </div>
   </footer>
 );
 

@@ -1,1 +1,38 @@
 * {border: 1px solid red;}
+
+/* Global fonts */
+
+$primary-font: 'Rubik', sans-serif;
+$secondary-font: 'Verdana', sans-serif;
+
+/* Text colors */
+
+$main-text-color: #767676;
+$light-text-color: #ffffff;
+$dark-text-color: #000000;
+
+
+/* Background colors */
+$background-color-01: #008d7f;
+$background-color-02: #85a1b2;
+$background-color-03: #85C442;
+$background-color-04: #dd3333;
+$background-color-05: #d44cef;
+$background-color-06: #eab04b;
+$background-color-07: #478fe0;
+$background-color-08: #e86aa1;
+$background-color-09: #ffffff;
+$background-color-10: #000000;
+
+
+/* Home Page fonts size */
+
+$base-size: 13px;
+$block-title: ($base-size + 4px);
+$head-top-articles-title: ($base-size + 8px);
+$list-top-articles-title: ($base-size + 2px);
+$middle-articles-title: ($base-size + 7px);
+$latest-articles-title: ($base-size + 6px);
+$must-read-articles-title: ($base-size + 4px);
+$must-read-author-data: ($base-size - 2px);
+$popular-categories-list: ($base-size + 2px);

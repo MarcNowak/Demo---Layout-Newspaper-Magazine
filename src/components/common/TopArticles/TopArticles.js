@@ -1,10 +1,10 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import GlobalNews from '../GlobalNews/GlobalNews';
-import TravelGuides from '../TravelGuides/TravelGuides';
-import Gadgets from '../Gadgets/Gadgets';
-import Receipes from '../Receipes/Receipes';
+import GlobalNews from '../GlobalNews';
+import TravelGuides from '../TravelGuides';
+import Gadgets from '../Gadgets';
+import Receipes from '../Receipes';
 
 
 const TopArticles = () => (

@@ -14,8 +14,4 @@ const MainLayout = () => (
   </div>
 );
 
-MainLayout.propTypes = {
-  children: PropTypes.node,
-};
-
 export default MainLayout;

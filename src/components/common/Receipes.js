@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import styles from './Receipes.module.scss';
 
 const Receipes = ({ children }) => (
-  <footer className={styles.root}>
+  <div className={styles.root}>
     <div>
       <p>Receipes</p>
     </div>
-  </footer>
+  </div>
 );
 
 Receipes.propTypes = {

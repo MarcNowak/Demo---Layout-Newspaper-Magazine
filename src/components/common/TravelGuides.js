@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import styles from './TravelGuides.module.scss';
 
 const TravelGuides = ({ children }) => (
-  <footer className={styles.root}>
+  <div className={styles.root}>
     <div>
       <p>TravelGuides</p>
     </div>
-  </footer>
+  </div>
 );
 
 TravelGuides.propTypes = {

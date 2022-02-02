@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import styles from './Gadgets.module.scss';
 
 const Gadgets = ({ children }) => (
-  <footer className={styles.root}>
+  <div className={styles.root}>
     <div>
       <p>Gadgets</p>
     </div>
-  </footer>
+  </div>
 );
 
 Gadgets.propTypes = {

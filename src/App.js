@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './styles/bootstrap.scss';
 import './styles/global.scss';
@@ -10,7 +10,9 @@ import Homepage from './components/views/HomePage/HomePage';
 const App = () => (
   <BrowserRouter>
     <MainLayout>
-      <Route exact path={'/'} component={Homepage} />
+      <Routes>
+        <Route exact path={'/'} element={<Homepage />} />
+      </Routes>
     </MainLayout>
   </BrowserRouter>
 );

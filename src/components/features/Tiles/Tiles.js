@@ -5,7 +5,7 @@ import React from 'react';
 
 const Tiles = () => (
   <div>
-
+    <p>Tiles</p>
   </div>
 );
 

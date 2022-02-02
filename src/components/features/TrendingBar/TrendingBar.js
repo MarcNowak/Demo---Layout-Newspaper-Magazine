@@ -4,8 +4,8 @@ import React from 'react';
 import styles from './TrendingBar.module.scss';
 
 const TrendingBar = () => (
-  <div>
-
+  <div className={styles.root}>
+    <p>Trending Bar</p>
   </div>
 );
 

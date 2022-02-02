@@ -8,6 +8,7 @@ import styles from './BottomBar.module.scss';
 const BottomBar = ({ children }) => (
   <div>
     {children}
+    Bottom Bar
     <BottomBarSocialList />
   </div>
 );

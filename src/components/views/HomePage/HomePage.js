@@ -11,8 +11,9 @@ import Tiles from '../../features/Tiles/Tiles';
 import MiddleArticles  from '../../common/MiddleArticles/MiddleArticles';
 import MiddleRightColumn from '../../features/MiddleRightColumn/MiddleRightColumn';
 import Video from '../../features/Video/Video';
-import LatestArticles from '../../common/LatestArticles/LatestArticles';
+import BottomArticles from '../../common/BottomArticles/BottomArticles';
 import BottomRightColumn from '../../features/BottomRightColumn/BottomRightColumn';
+
 
 
 const HomePage = () => (
@@ -25,7 +26,7 @@ const HomePage = () => (
     <MiddleArticles />
     <MiddleRightColumn />
     <Video />
-    <LatestArticles />
+    <BottomArticles />
     <BottomRightColumn />
   </div>
 );

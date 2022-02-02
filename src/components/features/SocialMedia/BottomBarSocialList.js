@@ -5,7 +5,7 @@ import styles from './BottomBarSocialList.module.scss';
 
 const BottomBarSocialList = () => (
   <div>
-
+Bottom Bar Social List
   </div>
 );
 

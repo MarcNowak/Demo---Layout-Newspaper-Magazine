@@ -5,7 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import styles from './Footer.module.scss';
 
-const Footer = ({ children }) => (
+const Footer = () => (
   <footer className={styles.root}>
     <Grid>
       <Row beetween='md' middle='xs'>

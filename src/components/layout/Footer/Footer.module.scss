@@ -1,0 +1,46 @@
+@import "../../../styles/settings.scss";
+
+
+.root {
+  * {border: 1px dotted blue;}
+  .footerMenu {
+    background-color: $background-color-10;
+    color: $medium-text-color;
+    font-size: $base-size;
+    line-height: 15px;
+    padding: 10px;
+    display: flex;
+
+    .contactWrapper {
+
+      ul {
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          padding: 10px;
+          text-align: right;
+
+          a {
+            color: $medium-text-color;
+            text-decoration: none;
+
+            &:hover {
+              color: $light-text-color;
+            }
+          }
+        }
+      }
+   }
+
+
+
+
+
+  }
+
+
+
+}

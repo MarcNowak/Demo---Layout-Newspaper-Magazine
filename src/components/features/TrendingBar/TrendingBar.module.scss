@@ -1,0 +1,32 @@
+@import "../../../styles/settings.scss";
+
+
+
+.root {
+  * {border: 1px dotted blue;}
+  font-family: $primary-font;
+  display: flex;
+
+  .trendingNow {
+    display: block;
+    font-size: $trending-bar;
+    background-color: $background-color-01;
+    color: $light-text-color;
+    text-transform: uppercase;
+    align-items: center;
+    flex: 1;
+  }
+
+  .trendingDesc {
+    font-size: $base-size;
+    font-weight: 900;
+    display: inline-block;
+  }
+
+  .prevNext {
+    text-decoration: none;
+    justify-items: end;
+    padding: 0 50px 0 50px;
+
+  }
+}

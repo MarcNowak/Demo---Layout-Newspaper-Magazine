@@ -1,0 +1,42 @@
+@import "../../../styles/settings.scss";
+
+
+.root {
+  font-family: $primary-font;
+  background-color: $background-color-10;
+  color: $medium-text-color;
+  font-size: $base-size;
+  min-height: 35px;
+
+  .leftSide {
+    display: flex;
+  }
+
+  .rightSide {
+    ul {
+      margin: 1em;
+      text-align: right;
+
+      li {
+        display: inline-block;
+        padding: 0 10px 0 10px;
+        text-align: right;
+
+        a {
+          color: $medium-text-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $light-text-color;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+}

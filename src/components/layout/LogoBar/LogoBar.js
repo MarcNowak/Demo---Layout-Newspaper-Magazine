@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
@@ -5,7 +6,16 @@ import styles from '../LogoBar/LogoBar.module.scss';
 
 const LogoBar = () => (
   <div className={styles.root}>
-    <p>Logo Bar</p>
+    <div className='container'>
+      <div div className='col text-center col-md'>
+        <a href='#'>
+          <img src='https://i.postimg.cc/bNrrFLsb/news-Magazine-Logo.png' alt='Logo' />
+        </a>
+        <a href='#'>
+          <img src='https://i.postimg.cc/WbT6DBYV/banner730x90.jpg' alt='Banner 730x90' />
+        </a>
+      </div>
+    </div>
   </div>
 );
 

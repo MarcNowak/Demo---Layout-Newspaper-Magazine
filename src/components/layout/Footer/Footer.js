@@ -15,7 +15,7 @@ const Footer = ({ children }) => (
           </div>
         </Col>
         <Col md={6} lg={6}>
-          <div className={styles.righSide}>
+          <div className={styles.rightSide}>
             <ul>
               <li>
                 <a href='#'>Blog</a>

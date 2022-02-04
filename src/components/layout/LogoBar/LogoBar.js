@@ -6,11 +6,13 @@ import styles from '../LogoBar/LogoBar.module.scss';
 
 const LogoBar = () => (
   <div className={styles.root}>
-    <div className='container'>
-      <div div className='col text-center col-md'>
+    <div className={styles.container}>
+      <div className={styles.logo}>
         <a href='#'>
           <img src='https://i.postimg.cc/bNrrFLsb/news-Magazine-Logo.png' alt='Logo' />
         </a>
+      </div>
+      <div className={styles.banner}>
         <a href='#'>
           <img src='https://i.postimg.cc/WbT6DBYV/banner730x90.jpg' alt='Banner 730x90' />
         </a>

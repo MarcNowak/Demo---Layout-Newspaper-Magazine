@@ -29,6 +29,7 @@ $background-color-10: #000000;
 /* Home Page fonts size */
 
 $base-size: 13px;
+$top-bar: ($base-size - 2px);
 $trending-bar: ($base-size - 1px);
 $block-title: ($base-size + 4px);
 $head-top-articles-title: ($base-size + 8px);

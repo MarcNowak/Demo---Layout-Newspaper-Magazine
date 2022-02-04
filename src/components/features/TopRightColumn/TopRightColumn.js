@@ -3,7 +3,7 @@ import React from 'react';
 
 import SocialList from '../SocialMedia/SocialList';
 import Advertisement300x250 from '../Advertisement/Advertisement300x250';
-import MostPopular from '../MostPopular/MostPopular';
+// import MostPopular from '../MostPopular/MostPopular';
 
 
 const TopRightColumn = () => (

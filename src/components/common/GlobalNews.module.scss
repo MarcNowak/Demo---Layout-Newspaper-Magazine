@@ -1,0 +1,19 @@
+@import '../../styles/settings.scss';
+
+.root {
+  * {border: 1px dotted blue;}
+
+  .container {
+
+
+    .sectionTitle {
+      display: flex;
+      flex: 1;
+    }
+
+    .leftArticleWrapper {
+
+      flex: 2;
+    }
+  }
+}

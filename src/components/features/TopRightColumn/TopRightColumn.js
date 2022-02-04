@@ -10,7 +10,7 @@ const TopRightColumn = () => (
   <div>
     <SocialList />
     <Advertisement300x250 />
-    <MostPopular />
+    {/* <MostPopular />  duplicated. Modification nedded */}
   </div>
 );
 

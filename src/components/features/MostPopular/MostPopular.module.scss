@@ -1,0 +1,87 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    max-height: 345px;
+
+
+    .leftSidePicture {
+      font-family: $primary-font;
+      display: flex;
+      flex: 1;
+
+      .bigPicture {
+        background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 490px;
+
+        .articleDescriptionWrapper {
+          position: relative;
+          margin-top: 350px;
+        }
+
+
+        .postCategory {
+          font-size: $base-size;
+          color: $light-text-color;
+          text-transform: uppercase;
+        }
+
+        .leftSideTitle {
+          font-size: $base-size-doubled;
+          color: $light-text-color;
+          font-weight: 500;
+        }
+
+        .editorDate {
+          font-size: $base-size;
+          color: $light-text-color;
+        }
+
+
+      }
+    }
+
+    .rightSidePicture {
+      display: flex;
+      flex: 1;
+      font-size: $block-title;
+      color: $light-text-color;
+      font-weight: 500;
+
+      .upperRow {
+        display: flex;
+        flex: 1;
+
+        .smallPicture01 {
+        background-image: url(../../../../public/images/articles/MostPopular_smallPhoto01.jpg);
+
+        }
+
+        .smallPicture02 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto02.jpg);
+
+        }
+      }
+
+      .bottomRow {
+        display: flex;
+        flex: 1;
+
+        .smallPicture03 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto03.jpg);
+
+        }
+
+        .smallPicture04 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto04.jpg);
+
+        }
+      }
+    }
+  }
+}

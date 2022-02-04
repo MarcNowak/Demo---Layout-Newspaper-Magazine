@@ -1,0 +1,23 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    background-image: url(../../../../public/images/mainlayout/background_menubar.jpg);
+    color: $light-text-color;
+    font-family: $primary-font;
+    font-size: $base-size;
+
+    .menuButton {
+      display: flex;
+      flex: 3;
+      justify-content: space-around;
+    }
+
+    .searchButton {
+      flex: 1;
+    }
+  }
+}

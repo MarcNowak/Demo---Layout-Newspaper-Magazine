@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
@@ -8,7 +9,9 @@ const Advertisement300x250 = () => (
     <div className={styles.container}>
       <div className={styles.title}>- Advertisement -</div>
       <div className={styles.banner300x250}>
-        <img src="/../../images/mainlayout/banner300x250.jpg" alt="car" />
+        <a href="#">
+          <img src="/../../images/mainlayout/banner300x250.jpg" alt="car" />
+        </a>
       </div>
     </div>
   </div>

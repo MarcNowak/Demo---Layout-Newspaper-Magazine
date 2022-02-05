@@ -17,7 +17,6 @@ const MustRead = () => (
       </div>
     </div>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>must read</div>
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -30,7 +29,6 @@ const MustRead = () => (
       </div>
     </div>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>must read</div>
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -43,7 +41,6 @@ const MustRead = () => (
       </div>
     </div>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>must read</div>
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -56,7 +53,6 @@ const MustRead = () => (
       </div>
     </div>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>must read</div>
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>

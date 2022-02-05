@@ -8,7 +8,7 @@ const Advertisement300x250 = () => (
     <div className={styles.container}>
       <div className={styles.title}>- Advertisement -</div>
       <div className={styles.banner300x250}>
-        <img src='/public/images/mainlayoutbanner300x250.jpg' alt="car" />
+        <img src="/../../images/mainlayout/banner300x250.jpg" alt="car" />
       </div>
     </div>
   </div>

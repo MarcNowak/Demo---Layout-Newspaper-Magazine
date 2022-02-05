@@ -5,7 +5,12 @@ import styles from '../Advertisement/Advertisement300x250.module.scss';
 
 const Advertisement300x250 = () => (
   <div className={styles.root}>
-    <p>Advertisement300x250</p>
+    <div className={styles.container}>
+      <div className={styles.title}>- Advertisement -</div>
+      <div className={styles.banner300x250}>
+        <img src='/public/images/mainlayoutbanner300x250.jpg' alt="car" />
+      </div>
+    </div>
   </div>
 );
 

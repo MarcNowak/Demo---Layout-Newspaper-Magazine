@@ -12,7 +12,9 @@ import MiddleArticles  from '../../common/MiddleArticles/MiddleArticles';
 // import MiddleRightColumn from '../../features/MiddleRightColumn/MiddleRightColumn';
 import Video from '../../features/Video/Video';
 import BottomArticles from '../../common/BottomArticles/BottomArticles';
+
 // import BottomRightColumn from '../../features/BottomRightColumn/BottomRightColumn';
+// import TopSectionWrapper from '../../features/TopSectionWrapper/TopSectionWrapper';
 
 
 
@@ -24,7 +26,9 @@ const HomePage = () => (
     {/* <TopRightColumn /> */}
     <Tiles />
     <MiddleArticles />
+
     {/* <MiddleRightColumn /> */}
+    {/* <TopSectionWrapper /> temporary */}
     <Video />
     <BottomArticles />
     {/* <BottomRightColumn /> */}

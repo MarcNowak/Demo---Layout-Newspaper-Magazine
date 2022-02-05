@@ -1,20 +1,16 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  * {border: 1px dotted blue;}
 
   .container {
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: $primary-font;
+    text-align: center;
 
     .socialContainer {
       font-size: $base-size;
       flex: 1;
-      align-items: center;
-      justify-content: space-around;
-      margin: auto;
 
       .numberOfFans {
         font-size: $block-title;

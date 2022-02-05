@@ -33,11 +33,12 @@
 
       .sectionTitle::after {
         position: absolute;
+        display: block;
         content: '';
         bottom: 10px;
         left: 50%;
-        width: 70%;
-        height: 5px;
+        width: 180px;
+        height: 4px;
         transform: translateX(-33%);
         background: $background-color-08;
       }

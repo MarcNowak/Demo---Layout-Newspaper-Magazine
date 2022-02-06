@@ -1,9 +1,7 @@
 @import "../../../styles/settings.scss";
 
-
-
 .root {
-  * {border: 1px dotted blue;}
+  // * {border: 1px dotted blue;}
   font-family: $primary-font;
   margin: 25px 0 25px 0;
 
@@ -42,11 +40,9 @@
 
       .arrowNext {
         padding: 0 5px 0 5px;
-        border: 2px dotted $medium-text-color;
+        border: 1px dotted $medium-text-color;
         margin-left: 2px;
       }
     }
-
-
   }
 }

@@ -1,26 +1,12 @@
 @import "../../../styles/settings.scss";
 
-
-
 .root {
   // * {border: 1px dotted blue;}
   font-family: $primary-font;
-
-  display: flex;
-  margin-bottom: 25px;
-
-  .trendingNow {
-    display: block;
-    font-size: $trending-bar;
-    background-color: $background-color-01;
-    color: $light-text-color;
-    text-transform: uppercase;
-
   margin: 25px 0 25px 0;
 
   .container {
     display: flex;
-
     align-items: center;
 
 
@@ -54,12 +40,9 @@
 
       .arrowNext {
         padding: 0 5px 0 5px;
-        border: 2px dotted $medium-text-color;
+        border: 1px dotted $medium-text-color;
         margin-left: 2px;
       }
     }
-
-
   }
-}
 }

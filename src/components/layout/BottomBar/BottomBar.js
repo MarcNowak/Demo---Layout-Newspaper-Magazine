@@ -22,8 +22,13 @@ const BottomBar = () => (
           Praesent vel luctus odio.
           Donec feugiat justo vel nisl egestas, quis porttitor leo bibendum.
         </div>
-        <div className={styles.contact}>Contact us: <a href="mailto:webmaster@example.com">webmaster@example.com</a></div>
-        <BottomBarSocialList />
+        <div className={styles.contact}>
+          Contact us: <a href="mailto:webmaster@example.com">webmaster@example.com</a>
+
+        </div>
+        <div className={styles.component}>
+          <BottomBarSocialList />
+        </div>
       </div>
     </div>
   </div>

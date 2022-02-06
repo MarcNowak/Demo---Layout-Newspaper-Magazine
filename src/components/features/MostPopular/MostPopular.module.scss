@@ -5,22 +5,21 @@
 
   .container {
     display: flex;
-    height: 445px;
+    height: 450px;
 
     .leftSidePicture {
       font-family: $primary-font;
       display: flex;
       flex: 1;
+      margin-right: 3px;
 
       .bigPicture {
         background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
-        // background-position: center center;
         background-size:500px 500px;
         background-size: cover;
 
         .articleDescriptionWrapper {
           position: relative;
-          // margin-top: 350px;
         }
 
         .postCategory {
@@ -44,6 +43,7 @@
 
     .rightSidePicture {
       flex: 1;
+      margin-left: 3px;
 
       color: $light-text-color;
       font-weight: 500;
@@ -58,6 +58,7 @@
           width: 295px;
           font-size: $block-title;
           background-size: cover;
+          margin: 0 3px 3px 0;
 
         }
 
@@ -67,6 +68,7 @@
           width: 295px;
           font-size: $block-title;
           background-size: cover;
+          margin: 0 0 3px 3px;
         }
       }
 
@@ -80,6 +82,7 @@
           width: 295px;
           font-size: $block-title;
           background-size: cover;
+          margin: 0 3px 0 0;
         }
 
         .smallPicture04 {
@@ -88,6 +91,7 @@
           width: 295px;
           font-size: $block-title;
           background-size: cover;
+          margin: 0 0 0 3px;
         }
       }
     }

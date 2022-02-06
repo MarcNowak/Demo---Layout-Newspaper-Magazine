@@ -24,11 +24,14 @@ $background-color-07: #478fe0;
 $background-color-08: #e86aa1;
 $background-color-09: #ffffff;
 $background-color-10: #000000;
+$background-color-11: #cccccc;
 
 
 /* Home Page fonts size */
 
 $base-size: 13px;
+$base-size-doubled: 26px;
+$top-bar: ($base-size - 2px);
 $trending-bar: ($base-size - 1px);
 $block-title: ($base-size + 4px);
 $head-top-articles-title: ($base-size + 8px);

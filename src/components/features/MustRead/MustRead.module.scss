@@ -1,0 +1,74 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted green;}
+
+  .container {
+    font-family: $primary-font;
+    margin-top: 20px;
+
+
+    .sectionTitle {
+      position: relative;
+      font-size: $block-title;
+      font-weight: 500;
+      flex: 8.5;
+      text-transform: uppercase;
+      margin: 0 40px 0 40px;
+    }
+
+    .sectionTitle::after {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 10px;
+      left: 50%;
+      width: 200px;
+      height: 4px;
+      transform: translateX(-23%);
+      background: $background-color-01;
+    }
+
+    .articleCategory {
+      display: inline;
+      text-transform: uppercase;
+      margin-left: 40px;
+      font-size: $must-read-author-data;
+
+      &:hover {
+        color: $background-color-01;
+        cursor: pointer;
+
+      }
+    }
+
+    .articleTitle {
+      margin: 10px 40px 10px 40px;
+      font-size: $must-read-articles-title;
+      font-weight: 500;
+    }
+
+    .articleDetailsWrapper {
+      display: flex;
+      margin: 0 40px 0 40px;
+    }
+
+    .editorData {
+      margin-right: 20px;
+      font-size: $must-read-author-data;
+
+      &:hover {
+        color: $background-color-01;
+        cursor: pointer;
+
+      }
+    }
+
+    .articleDate {
+      font-size: $must-read-author-data;
+
+    }
+
+  }
+
+}

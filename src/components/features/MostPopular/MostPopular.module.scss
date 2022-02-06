@@ -1,0 +1,95 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    height: 445px;
+
+    .leftSidePicture {
+      font-family: $primary-font;
+      display: flex;
+      flex: 1;
+
+      .bigPicture {
+        background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
+        // background-position: center center;
+        background-size:500px 500px;
+        background-size: cover;
+
+        .articleDescriptionWrapper {
+          position: relative;
+          // margin-top: 350px;
+        }
+
+        .postCategory {
+          font-size: $base-size;
+          color: $light-text-color;
+          text-transform: uppercase;
+        }
+
+        .leftSideTitle {
+          font-size: $base-size-doubled;
+          color: $light-text-color;
+          font-weight: 500;
+        }
+
+        .editorDate {
+          font-size: $base-size;
+          color: $light-text-color;
+        }
+      }
+    }
+
+    .rightSidePicture {
+      flex: 1;
+
+      color: $light-text-color;
+      font-weight: 500;
+
+      .upperRow {
+        display: flex;
+        flex: 1;
+
+        .smallPicture01 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto01.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $block-title;
+          background-size: cover;
+
+        }
+
+        .smallPicture02 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto02.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $block-title;
+          background-size: cover;
+        }
+      }
+
+      .bottomRow {
+        display: flex;
+        flex: 1;
+
+        .smallPicture03 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto03.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $block-title;
+          background-size: cover;
+        }
+
+        .smallPicture04 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto04.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $block-title;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

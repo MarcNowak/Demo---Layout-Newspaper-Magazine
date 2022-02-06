@@ -3,8 +3,9 @@
 
 
 .root {
-  * {border: 1px dotted blue;}
+  // * {border: 1px dotted blue;}
   font-family: $primary-font;
+
   display: flex;
   margin-bottom: 25px;
 
@@ -14,20 +15,50 @@
     background-color: $background-color-01;
     color: $light-text-color;
     text-transform: uppercase;
+
+  margin: 25px 0 25px 0;
+
+  .container {
+    display: flex;
+
     align-items: center;
-    flex: 1;
-  }
 
-  .trendingDesc {
-    font-size: $base-size;
-    font-weight: 900;
-    display: inline-block;
-  }
 
-  .prevNext {
-    text-decoration: none;
-    justify-items: end;
-    padding: 0 50px 0 50px;
+    .trendingNow {
+      flex: 1;
+      font-size: $trending-bar;
+      background-color: $background-color-01;
+      color: $light-text-color;
+      text-transform: uppercase;
+
+    }
+
+    .trendingDesc {
+      font-size: $base-size;
+      font-weight: 900;
+      flex: 5;
+      margin-left: 10px;
+      // display: inline-block;
+    }
+
+    .arrows {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+
+      .arrowPrev {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-right: 2px;
+      }
+
+      .arrowNext {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-left: 2px;
+      }
+    }
+
 
   }
 }

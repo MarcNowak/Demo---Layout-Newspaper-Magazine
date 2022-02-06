@@ -1,0 +1,36 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    font-family: $primary-font;
+    font-size: $top-bar;
+    font-weight: 900;
+    align-items: center;
+    background-color: $background-color-11;
+    margin-bottom: 25px;
+
+    .temperature {
+      display: flex;
+      flex: 1;
+    }
+
+    .date {
+      flex: 1;
+    }
+
+    .topMenu {
+      display: flex;
+      flex: 5;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .topBarSocialList {
+      flex: 1;
+    }
+  }
+
+}

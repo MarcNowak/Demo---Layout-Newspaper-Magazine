@@ -5,8 +5,30 @@ import styles from './GlobalNews.module.scss';
 
 const GlobalNews = ({ children }) => (
   <div className={styles.root}>
-    <div>
-      <p>GlobalNews</p>
+    <div className={styles.container}>
+      <div className={styles.sectionTitle}>
+        SECTION TITLE
+      </div>
+      <div className={styles.leftArticleWrapper}>
+        <div className={styles.mainArticlePhoto}>
+          MAIN PHOTO
+        </div>
+        <div className={styles.articleDetails}>
+          <div className={styles.articleCetegory}>
+            article category
+          </div>
+          <div className={styles.articleTitle}>
+            Article Title
+          </div>
+          <div className={styles.editorDate}>
+            Editor Date
+          </div>
+          <div className={styles.articleLead}>
+            Article Lead
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 );

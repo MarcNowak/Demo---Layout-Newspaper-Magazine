@@ -1,0 +1,56 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted green;}
+
+  .container {
+    font-family: $primary-font;
+    font-size: $popular-categories-list;
+    line-height: 2.5em;
+    margin-top: 20px;
+    margin: 20px 40px 0 40px;
+
+
+    .sectionTitle {
+      position: relative;
+      font-size: $block-title;
+      font-weight: 500;
+      flex: 8.5;
+      text-transform: uppercase;
+      // margin: 0 40px 0 40px;
+    }
+
+    .sectionTitle::after {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 15px;
+      left: 50%;
+      width: 170px;
+      height: 4px;
+      transform: translateX(-23%);
+      background: $background-color-01;
+    }
+
+    .categoriesWrapper {
+      display: flex;
+      font-weight: 500;
+
+      &:hover {
+        color: $background-color-01;
+        cursor: pointer;
+
+      }
+    }
+
+      .category {
+        flex: 8;
+      }
+
+      .total {
+        flex: 1;
+      }
+
+  }
+
+}

@@ -1,10 +1,11 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  * {border: 1px dotted blue;}
+  // * {border: 1px dotted blue;}
 
   .container {
     display: flex;
+    margin-bottom: 25px;
 
     .logo {
       flex: 25%;

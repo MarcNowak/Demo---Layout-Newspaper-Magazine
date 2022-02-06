@@ -19,36 +19,53 @@ import {
 const MenuBar = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.menuButton}>
-        <a href='#'>
-          <FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon><p>Home</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon><p>Global</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faBicycle}></FontAwesomeIcon><p>Lifestyle</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon><p>Fashion</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon><p>Gaming</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon><p>Fitness</p>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon><p>Video</p>
-        </a>
-        <a href='#'>
-          <p>More</p>
-        </a>
-      </div>
+      <ul className={styles.menuButtons}>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon><span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon><span>Global</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faBicycle}></FontAwesomeIcon><span>Lifestyle</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon><span>Fashion</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon><span>Gaming</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon><span>Fitness</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon><span>Video</span>
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            <span>More</span>
+          </a>
+        </li>
+      </ul>
       <div className={styles.searchButton}>
         <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
       </div>
     </div>
+    <div className={styles.separator}></div>
   </div>
 );
 

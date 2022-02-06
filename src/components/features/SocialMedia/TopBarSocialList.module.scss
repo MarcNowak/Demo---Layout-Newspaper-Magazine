@@ -1,9 +1,17 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  // * {border: 1px dotted blue;}
 
   .container {
-    display: flex;
-    justify-content: space-around;
+    // display: flex;
+    // justify-content: space-around;
+    align-items: center;
+
+    .socialIcons {
+      display: flex;
+      justify-content: space-around;
+
+    }
   }
 }

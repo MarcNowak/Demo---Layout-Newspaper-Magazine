@@ -11,10 +11,12 @@
     align-items: center;
     background-color: $background-color-11;
     margin-bottom: 25px;
+    height: 35px;
 
     .temperature {
       display: flex;
       flex: 1;
+      margin-left: 20px;
     }
 
     .date {
@@ -25,11 +27,12 @@
       display: flex;
       flex: 5;
       justify-content: space-around;
-      text-align: center;
+
     }
 
     .topBarSocialList {
       flex: 1;
+      margin-right: 20px;;
     }
   }
 

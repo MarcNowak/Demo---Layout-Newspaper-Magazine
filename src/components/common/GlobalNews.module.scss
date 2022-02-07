@@ -1,19 +1,89 @@
 @import '../../styles/settings.scss';
 
 .root {
-  // * {border: 1px dotted blue;}
+  * {border: 1px dotted green}
 
   .container {
+    // display: inline;
+    font-family: $primary-font;
 
-
-    .sectionTitle {
+    .sectionTitleWrapper {
       display: flex;
-      flex: 1;
+
+      .sectionTitle {
+        flex: 9;
+        text-transform: uppercase;
+      }
+
+      .expander {
+        flex: 1;
+      }
     }
 
-    .leftArticleWrapper {
+    .articlesWrapper {
+      display: flex;
 
-      flex: 2;
+      .leftArticleWrapper {
+        flex: 1;
+
+        .bigPhoto {
+          img {
+          max-width: 340px;
+          }
+        }
+
+        .articleDescriptionWrapper {
+          font-size: $base-size;
+
+          .artCategory {
+            text-transform: uppercase;
+          }
+
+          .artTitle {
+            font-size: $head-top-articles-title;
+          }
+
+          .editorData {
+            font-size: $must-read-author-data;
+          }
+
+        }
+      }
+
+      .rightArticleWrapper {
+        flex: 1;
+        display: flex;
+
+        .articlePhoto {
+          img {
+            max-width: 100px;
+          }
+        }
+
+        .rightArtDecsriptionWrapper {
+          flex: 5;
+
+          .rightArtEditorData {
+            font-size: $must-read-articles-title;
+            font-weight: 500;
+          }
+
+          .rightEditorData {
+            font-size: $top-bar;
+          }
+
+
+
+
+
+
+
+        }
+      }
+
+
     }
+
   }
+
 }

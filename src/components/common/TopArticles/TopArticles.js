@@ -17,8 +17,14 @@ const TopArticles = () => (
       <div className={styles.topArticlesLeft}>
         <GlobalNews />
         <TravelGuides />
-        <Gadgets />
-        <Receipes />
+        <div className={styles.GadRecWrapper}>
+          <div className={styles.Gadgets}>
+            <Gadgets />
+          </div>
+          <div className={styles.Receipes}>
+            <Receipes />
+          </div>
+        </div>
       </div>
       <div className={styles.topArticlesRight}>
         <TopRightColumn />

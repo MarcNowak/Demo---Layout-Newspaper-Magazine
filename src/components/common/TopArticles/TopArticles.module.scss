@@ -8,6 +8,18 @@
 
     .topArticlesLeft {
       flex: 2;
+
+      .GadRecWrapper {
+        display: flex;
+
+        .Gadgets {
+          flex: 1;
+        }
+
+        .Receipes {
+          flex: 1;
+        }
+      }
     }
 
     .topArticlesRight {

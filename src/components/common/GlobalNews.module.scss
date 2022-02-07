@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .root {
-  * {border: 1px dotted green}
+  // * {border: 1px dotted green}
 
   .container {
     // display: inline;
@@ -13,6 +13,8 @@
       .sectionTitle {
         flex: 9;
         text-transform: uppercase;
+        font-weight: 500;
+        margin: 0 0 10px 15px;
       }
 
       .expander {
@@ -22,6 +24,7 @@
 
     .articlesWrapper {
       display: flex;
+      margin: 0 15px 0 15px;
 
       .leftArticleWrapper {
         flex: 1;
@@ -45,6 +48,7 @@
 
           .editorData {
             font-size: $must-read-author-data;
+            line-height: 1.5rem;
           }
 
         }
@@ -53,15 +57,18 @@
       .rightArticleWrapper {
         flex: 1;
         display: flex;
+        padding-bottom: 25px;
 
         .articlePhoto {
           img {
             max-width: 100px;
+            padding-left:10px;
           }
         }
 
         .rightArtDecsriptionWrapper {
           flex: 5;
+          margin-left: 10px;
 
           .rightArtEditorData {
             font-size: $must-read-articles-title;
@@ -70,6 +77,7 @@
 
           .rightEditorData {
             font-size: $top-bar;
+            line-height: 1.5rem;
           }
 
 

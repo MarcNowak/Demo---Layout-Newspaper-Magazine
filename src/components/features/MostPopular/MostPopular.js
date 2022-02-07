@@ -8,24 +8,39 @@ const MostPopular = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <div className={styles.leftSidePicture}>
-        <div className={styles.bigPicture}>
-          <div className={styles.articleDescriptionWrapper}>
-            <div className={styles.postCategory}>style</div>
-            <div className={styles.leftSideTitle}>
-              What Makeup to Wear Daily, No Matter What You’ve Got Planned
-            </div>
-            <div className={styles.editorDate}>David Lee = June 3, 2020</div>
+        <div className={styles.articleDescriptionWrapper}>
+          <div className={styles.postCategory}>style</div>
+          <div className={styles.leftSideTitle}>
+            What Makeup to Wear Daily, No Matter What You’ve Got Planned
           </div>
+          <div className={styles.editorDate}>David Lee - June 3, 2020</div>
         </div>
       </div>
+
       <div className={styles.rightSidePicture}>
         <div className={styles.upperRow}>
-          <p className={styles.smallPicture01}>What Makeup to Wear Daily, No Matter What You’ve Got Planned</p>
-          <p className={styles.smallPicture02}>Work Out as Much as Possible During Your All Inclusive Vacations</p>
+          <div className={styles.smallPicture01}>
+            <div className={styles.smallPicture01DescWrapper}>
+              <div className={styles.smallPicture01Cat}>travel</div>
+              <div className={styles.smallPicture01Desc}>What Makeup to Wear Daily, No Matter What You’ve Got Planned</div>
+            </div>
+          </div>
+          <div className={styles.smallPicture02}>
+            <div className={styles.smallPicture02DescWrapper}>
+              <div className={styles.smallPicture02Cat}>style</div>
+              <div className={styles.smallPicture02Desc}>Work Out as Much as Possible During Your All Inclusive Vacations</div>
+            </div>
+          </div>
         </div>
         <div className={styles.bottomRow}>
-          <p className={styles.smallPicture03}>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</p>
-          <p className={styles.smallPicture04}>Bloggers Hijacked the Industry, Cutting a Piece of Earnings</p>
+          <div className={styles.smallPicture03}>
+            <div className={styles.smallPicture03Cat}>show biz</div>
+            <div className={styles.smallPicture03Desc}>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</div>
+          </div>
+          <div className={styles.smallPicture04}>
+            <div className={styles.smallPicture04Cat}>facts</div>
+            <div className={styles.smallPictureDesc}>Bloggers Hijacked the Industry, Cutting a Piece of Earnings</div>
+          </div>
         </div>
       </div>
     </div>

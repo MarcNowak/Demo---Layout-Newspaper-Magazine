@@ -1,0 +1,22 @@
+@import "../../../styles/settings.scss";
+
+.root {
+
+  .container {
+    padding: 10px;
+    display: flex;
+    font-family: $primary-font;
+    text-align: center;
+
+    .socialContainer {
+      font-size: $base-size;
+      flex: 1;
+
+      .numberOfFans {
+        font-size: $block-title;
+        font-weight: 900;
+      }
+    }
+  }
+
+}

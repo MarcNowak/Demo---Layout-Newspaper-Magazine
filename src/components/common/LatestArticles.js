@@ -85,7 +85,7 @@ const LatestArticles = () => (
               David Lee
             </div>
             <div className={styles.date}>
-              - February 8, 2022
+              - February 8, 2021
             </div>
           </div>
         </div>

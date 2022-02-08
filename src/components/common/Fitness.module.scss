@@ -1,0 +1,106 @@
+@import "../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    font-family: $primary-font;
+    margin: 0 15px 0 15px;
+
+    .sectionTitleWrapper {
+      display: flex;
+      margin-bottom: 15px;
+
+      .sectionTitle {
+        position: relative;
+        flex: 8;
+        font-size: $block-title;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .sectionTitle::after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 10px;
+        left: 50%;
+        width: 575px;
+        height: 4px;
+        transform: translateX(-44%);
+        background: $background-color-07;
+      }
+
+      .expander {
+        flex: 1;
+      }
+    }
+
+    .articleWrapper {
+      display: flex;
+
+      .photo {
+        margin: 10px 0 10px 0;
+        img {
+          width: 308px;
+        }
+      }
+
+      .articleDetailsWrapper {
+        margin: 10px 0 10px 10px;
+
+        .artTitle {
+          font-size: $block-title;
+          font-weight: 500;
+
+
+          &:hover {
+            color: $background-color-07;
+            cursor: pointer;
+
+          }
+        }
+
+        .artLead {
+          color: $main-text-color;
+          font-size: $base-size;
+        }
+      }
+
+      .artDetailsDescriptionWrapper {
+        display: flex;
+        margin: 10px 0 10px 0;
+        font-size: $base-size;
+
+        .artCat {
+          flex: 1;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          &:hover {
+            color: $background-color-07;
+            cursor: pointer;
+
+          }
+        }
+
+        .editorData {
+          flex: 1;
+          font-weight: 500;
+
+          &:hover {
+            color: $background-color-07;
+            cursor: pointer;
+
+          }
+
+        }
+
+        .date {
+          flex: 3;
+          color: $main-text-color
+        }
+      }
+    }
+  }
+}

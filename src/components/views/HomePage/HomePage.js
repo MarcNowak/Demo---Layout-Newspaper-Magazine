@@ -10,8 +10,9 @@ import TopArticles from '../../common/TopArticles/TopArticles';
 import Tiles from '../../features/Tiles/Tiles';
 import MiddleArticles  from '../../common/MiddleArticles/MiddleArticles';
 // import MiddleRightColumn from '../../features/MiddleRightColumn/MiddleRightColumn';
-import Video from '../../features/Video/Video';
+// import Video from '../../features/Video/Video';
 import BottomArticles from '../../common/BottomArticles/BottomArticles';
+import ReactPlayer from '../../features/Video/Video';
 
 // import BottomRightColumn from '../../features/BottomRightColumn/BottomRightColumn';
 // import TopSectionWrapper from '../../features/TopSectionWrapper/TopSectionWrapper';
@@ -29,7 +30,8 @@ const HomePage = () => (
 
     {/* <MiddleRightColumn /> */}
     {/* <TopSectionWrapper /> temporary */}
-    <Video />
+    <ReactPlayer />
+    {/* <Video /> */}
     <BottomArticles />
     {/* <BottomRightColumn /> */}
   </div>

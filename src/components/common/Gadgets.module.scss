@@ -8,9 +8,22 @@
     margin: 0 15px 0 15px;
 
     .sectionTitle {
+      position: relative;
       font-size: $block-title;
       text-transform: uppercase;
       font-weight: 500;
+    }
+
+    .sectionTitle::after {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 10px;
+      left: 50%;
+      width: 230px;
+      height: 4px;
+      transform: translateX(-33%);
+      background: $background-color-05;
     }
 
     .mainPhoto {

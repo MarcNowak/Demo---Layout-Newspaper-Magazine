@@ -6,7 +6,7 @@ import styles from './MostShared.module.scss';
 const MostShared = () => (
   <div className={styles.root}>
     <div>
-      <p>MostShared</p>
+      <p>Most Shared</p>
     </div>
   </div>
 );

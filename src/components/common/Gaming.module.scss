@@ -1,0 +1,114 @@
+@import "../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted green;}
+
+  .container {
+    font-family: $primary-font;
+
+    .expander {
+      font-size: $top-bar;
+      // margin: auto;
+      justify-content: end;
+      align-items: center;
+      display: flex;
+
+      .expanderArrow {
+        margin-left: 10px;
+      }
+
+    }
+
+    .titleWrapper {
+      display: flex;
+      margin: 0 40px 0 40px;
+
+      .sectionTitle {
+        position: relative;
+        font-size: $block-title;
+        font-weight: 500;
+        flex: 8.5;
+        text-transform: uppercase;
+      }
+
+      .sectionTitle::after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 10px;
+        left: 50%;
+        width: 180px;
+        height: 4px;
+        transform: translateX(-33%);
+        background: $background-color-08;
+      }
+
+      .expander {
+        flex: 1.5;
+      }
+    }
+
+    .articleWrapper {
+
+      .articlePhoto {
+        text-align: center;
+
+        img {
+          max-width: 300px;
+        }
+      }
+
+      .articleTitle {
+        margin: 10px 40px 10px 40px;
+        font-size: $block-title;
+        font-weight: 500;
+      }
+    }
+
+    .articleWrapper:hover {
+      color: $background-color-08;
+      cursor: pointer;
+    }
+
+    .articleDetailsWrapper {
+      margin: 0 40px 0 40px;
+    }
+
+    .articleDetails {
+      display: flex;
+      font-size: $base-size;
+
+      .articleCategory {
+        flex: 1;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $background-color-08;
+          cursor: pointer;
+
+        }
+      }
+
+      .editorDate {
+        flex: 1;
+
+        &:hover {
+          color: $background-color-08;
+          cursor: pointer;
+
+        }
+      }
+
+      .articleDate {
+        flex: 2;
+        color: $main-text-color;
+      }
+    }
+
+    .articleLead {
+      color: $main-text-color;
+      font-size: $base-size;
+    }
+  }
+
+}

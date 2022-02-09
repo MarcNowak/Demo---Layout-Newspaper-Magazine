@@ -1,0 +1,97 @@
+@import '../../styles/settings.scss';
+
+.root {
+  // * {border: 1px dotted green}
+
+  .container {
+    // display: inline;
+    font-family: $primary-font;
+
+    .sectionTitleWrapper {
+      display: flex;
+
+      .sectionTitle {
+        flex: 9;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 0 0 10px 15px;
+      }
+
+      .expander {
+        flex: 1;
+      }
+    }
+
+    .articlesWrapper {
+      display: flex;
+      margin: 0 15px 0 15px;
+
+      .leftArticleWrapper {
+        flex: 1;
+
+        .bigPhoto {
+          img {
+          max-width: 340px;
+          }
+        }
+
+        .articleDescriptionWrapper {
+          font-size: $base-size;
+
+          .artCategory {
+            text-transform: uppercase;
+          }
+
+          .artTitle {
+            font-size: $head-top-articles-title;
+          }
+
+          .editorData {
+            font-size: $must-read-author-data;
+            line-height: 1.5rem;
+          }
+
+        }
+      }
+
+      .rightArticleWrapper {
+        flex: 1;
+        display: flex;
+        padding-bottom: 25px;
+
+        .articlePhoto {
+          img {
+            max-width: 100px;
+            padding-left:10px;
+          }
+        }
+
+        .rightArtDecsriptionWrapper {
+          flex: 5;
+          margin-left: 10px;
+
+          .rightArtEditorData {
+            font-size: $must-read-articles-title;
+            font-weight: 500;
+          }
+
+          .rightEditorData {
+            font-size: $top-bar;
+            line-height: 1.5rem;
+          }
+
+
+
+
+
+
+
+        }
+      }
+
+
+    }
+
+  }
+
+}

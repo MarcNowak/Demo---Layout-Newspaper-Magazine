@@ -1,0 +1,144 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    height: 450px;
+    color: $light-text-color;
+
+    .leftSidePicture {
+      font-family: $primary-font;
+      display: flex;
+      flex: 1;
+      margin-right: 3px;
+      background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
+      background-size:500px 500px;
+      background-size: cover;
+      position: relative;
+
+        .articleDescriptionWrapper {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+
+          .postCategory {
+            font-size: $base-size;
+            color: $light-text-color;
+            text-transform: uppercase;
+          }
+
+          .leftSideTitle {
+            font-size: $base-size-doubled;
+            color: $light-text-color;
+            font-weight: 500;
+          }
+
+          .editorDate {
+            font-size: $base-size;
+            color: $light-text-color;
+            }
+        }
+
+      }
+
+    .rightSidePicture {
+      flex: 1;
+      margin-left: 3px;
+      // position: relative;
+
+      color: $light-text-color;
+      font-weight: 500;
+
+      .upperRow {
+        display: flex;
+        flex: 1;
+
+
+        .smallPicture01 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto01.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $base-size;
+          background-size: cover;
+          margin: 0 3px 3px 0;
+          position: relative;
+
+
+          .smallPicture01DescWrapper {
+            position:absolute;
+            bottom:20;
+            right:100;
+
+            .smallPicture01Cat {
+              text-transform: uppercase;
+            }
+
+            .smallPicture01Desc {
+              font-size: $list-top-articles-title;
+            }
+          }
+        }
+
+        .smallPicture02 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto02.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $base-size;
+          background-size: cover;
+          margin: 0 0 3px 3px;
+
+            .smallPicture02Cat {
+              text-transform: uppercase;
+            }
+
+            .smallPicture02Desc {
+              font-size: $list-top-articles-title;
+            }
+          }
+
+      }
+
+      .bottomRow {
+        display: flex;
+        flex: 1;
+        position: relative;
+
+        .smallPicture03 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto03.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $base-size;
+          background-size: cover;
+          margin: 0 3px 0 0;
+
+          .smallPicture03Cat {
+            text-transform: uppercase;
+          }
+
+          .smallPicture03Desc {
+            font-size: $list-top-articles-title;
+          }
+        }
+
+        .smallPicture04 {
+          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto04.jpg);
+          height: 220px;
+          width: 295px;
+          font-size: $base-size;
+          background-size: cover;
+          margin: 0 0 0 3px;
+
+          .smallPicture04Cat {
+            text-transform: uppercase;
+          }
+
+          .smallPicture04Desc {
+            font-size: $list-top-articles-title;
+          }
+        }
+      }
+    }
+  }
+}

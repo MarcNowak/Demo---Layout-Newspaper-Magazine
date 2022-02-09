@@ -1,0 +1,20 @@
+@import "../../../styles/settings.scss";
+
+.root {
+    // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .icons {
+      font-size: 30px;
+      padding: -1px 15px 0 15px;
+      width: 40px;
+      height: 40px;
+      margin: 7px 14px 7px 0;
+      background: $medium-text-color;
+      opacity: 0.5
+    }
+  }
+}

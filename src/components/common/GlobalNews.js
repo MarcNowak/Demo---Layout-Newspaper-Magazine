@@ -5,8 +5,93 @@ import styles from './GlobalNews.module.scss';
 
 const GlobalNews = ({ children }) => (
   <div className={styles.root}>
-    <div>
-      <p>GlobalNews</p>
+    <div className={styles.container}>
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>
+          Global News
+        </div>
+        <div className={styles.expander}>
+          All
+        </div>
+      </div>
+      <div className={styles.articlesWrapper}>
+        <div className={styles.leftArticleWrapper}>
+          <div className={styles.bigPhoto}>
+            <img src='images/articles/GlobalNewsMainArticlePhoto.jpg' alt="GlobalMainPhoto" />
+          </div>
+          <div className={styles.articleDescriptionWrapper}>
+            <div className={styles.artCategory}>
+              global
+            </div>
+            <div className={styles.artTitle}>
+              Witnessing the Birth of the New Coronavirus Economy
+            </div>
+            <div className={styles.editorData}>
+              David Lee - 07.02.2022  {/* dodać sekcję dla daty */}
+            </div>
+            <div className={styles.artLead}>
+              People live better in big houses and in big clothes.
+              I try to contrast; life today is full of contrast. We have to change!...
+            </div>
+          </div>
+        </div>
+        <div className={styles.rightArticlesWrapper}>
+          <div className={styles.rightArticleWrapper}>
+            <div className={styles.articlePhoto}>
+              <img src='images/articles/GlobalNews-01.jpg' alt='GlobalArticlePhoto' />
+            </div>
+            <div className={styles.rightArtDecsriptionWrapper}>
+              <div className={styles.rightArtEditorData}>
+                More and More People Stay Home as Coronavirus Spreads
+              </div>
+              <div className={styles.rightEditorData}>
+                February 7, 2022
+              </div>
+            </div>
+          </div>
+          <div className={styles.rightArticleWrapper}>
+            <div className={styles.articlePhoto}>
+              <img src='images/articles/GlobalNews-02.jpg' alt='GlobalArticlePhoto' />
+            </div>
+            <div className={styles.rightArtDecsriptionWrapper}>
+              <div className={styles.rightArtEditorData}>
+               The Real Economy Has Never Been Tested by a Pandemic
+              </div>
+              <div className={styles.rightEditorData}>
+                February 7, 2022
+              </div>
+            </div>
+          </div>
+          <div className={styles.rightArticleWrapper}>
+            <div className={styles.articlePhoto}>
+              <img src='images/articles/GlobalNews-03.jpg' alt='GlobalArticlePhoto' />
+            </div>
+            <div className={styles.rightArtDecsriptionWrapper}>
+              <div className={styles.rightArtEditorData}>
+               How to Think and Act in the Plummeting Stock Market
+              </div>
+              <div className={styles.rightEditorData}>
+                February 7, 2022
+              </div>
+            </div>
+          </div>
+          <div className={styles.rightArticleWrapper}>
+            <div className={styles.articlePhoto}>
+              <img src='images/articles/GlobalNews-04.jpg' alt='GlobalArticlePhoto' />
+            </div>
+            <div className={styles.rightArtDecsriptionWrapper}>
+              <div className={styles.rightArtEditorData}>
+                H&M’s Fashion Photoshoot Campaign is the Coolest Thing We’ve Seen
+              </div>
+              <div className={styles.rightEditorData}>
+                February 7, 2022
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 );

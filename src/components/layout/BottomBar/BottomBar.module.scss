@@ -1,0 +1,45 @@
+@import "../../../styles/settings.scss";
+
+.root {
+
+  .container {
+    display: block;
+    background-image: url(../../../../public/images/mainlayout/bottomBar-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    min-height: 416px;
+    font-family: $primary-font;
+    color: $light-text-color;
+    font-size: $base-size;
+
+    .contentWrapper {
+      position: relative;
+      top: 50px;
+
+      .logo {
+        position:inherit;
+      }
+
+      .bottomBarText {
+        padding: 0 200px 0 200px;
+        position:inherit;
+        top: 20px;
+      }
+
+      .contact {
+        position:inherit;
+        top: 30px;
+        margin-bottom: 20px;
+
+        a {
+          color: $background-color-01;
+        }
+      }
+
+      .component {
+        position: inherit;
+        top: 25px;
+      }
+    }
+  }
+}

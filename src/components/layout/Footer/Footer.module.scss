@@ -5,32 +5,28 @@
   background-color: $background-color-10;
   color: $medium-text-color;
   font-size: $base-size;
-  min-height: 35px;
+  height: 37px;
 
-  .leftSide {
+  .container {
     display: flex;
-  }
+    transform: translateY(50%);
+    margin: 0 48px 0 48px;
 
-  .rightSide {
-    ul {
-      margin: 1em;
-      text-align: right;
+    .leftSide {
+      flex: 8;
+    }
 
-      li {
-        display: inline-block;
-        padding: 0 10px 0 10px;
-        text-align: right;
+    .rightSide {
+      display: flex;
 
-        a {
-          color: $medium-text-color;
-          text-decoration: none;
+      a {
+        color: $medium-text-color;
+        padding-left: 20px;
 
-          &:hover {
-            color: $light-text-color;
-          }
+        &:hover {
+          color: $light-text-color;
         }
       }
     }
   }
-
 }

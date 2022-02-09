@@ -1,12 +1,21 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import ReactPlayer from 'react-player';
 
-// import styles from './Video.modules.scss';
+import styles from './Video.module.scss';
 
-const Video = () => (
-  <div>
-    <p>Video</p>
-  </div>
-);
+class ResponsivePlayer extends React.Component {
+  render () {
+    return (
+      <div className={styles.playerWrapper}>
+        <ReactPlayer
+          className={styles.reactPlayer}
+          url='https://www.youtube.com/watch?v=rHvPqAqy-ww'
+          width='100%'
+          height='100%'
+        />
+      </div>
+    );
+  }
+}
 
-export default Video;
+export default ResponsivePlayer;

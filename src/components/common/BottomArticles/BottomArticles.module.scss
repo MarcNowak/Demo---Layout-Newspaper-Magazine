@@ -1,0 +1,18 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+
+    .bottomArticlesLeft {
+      flex: 2;
+    }
+
+    .bottomArticlesRight {
+      flex: 1;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    display: flex;
+
+    .topArticlesLeft {
+      flex: 2;
+
+      .GadRecWrapper {
+        display: flex;
+
+        .Gadgets {
+          flex: 1;
+        }
+
+        .Receipes {
+          flex: 1;
+        }
+      }
+    }
+
+    .topArticlesRight {
+      flex: 1;
+    }
+  }
+
+}

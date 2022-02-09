@@ -1,0 +1,50 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .separator {
+    border: 3px solid #dd3333;
+    width: 100%;
+    display: block;
+
+  }
+
+  .container {
+    display: flex;
+    background-image: url(../../../../public/images/mainlayout/background_menubar.jpg);
+    color: $light-text-color;
+    font-family: $primary-font;
+    font-size: 15px;
+    height: 48px;
+    align-items: center;
+
+    .menuButtons {
+      display: flex;
+      flex: 5;
+      justify-content:space-between;
+      margin-top: auto;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      span {
+        margin-left:  10px;
+      }
+
+    }
+
+    .searchButton {
+      flex: 1;
+      text-align: end;
+      margin-right: 40px;
+    }
+
+  }
+}

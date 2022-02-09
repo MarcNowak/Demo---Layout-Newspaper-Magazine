@@ -12,8 +12,10 @@ import {
 const TrendingBar = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.trendingNow}>
-        <span>trending now</span>
+      <div className={styles.trendingWrapper}>
+        <div className={styles.trendingNow}>
+          <span>trending now</span>
+        </div>
       </div>
       <div className={styles.trendingDesc}>
         <span>The Weirdest Places Ashes Have Been Scattered in South America</span>

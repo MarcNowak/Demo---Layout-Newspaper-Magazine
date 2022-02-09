@@ -6,6 +6,7 @@
   .container {
     // display: inline;
     font-family: $primary-font;
+    margin: 0 48px 25px 48px;
 
     .sectionTitleWrapper {
       display: flex;
@@ -15,6 +16,19 @@
         text-transform: uppercase;
         font-weight: 500;
         margin: 0 0 10px 15px;
+        position: relative;
+      }
+
+      .sectionTitle::after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 10px;
+        left: 50%;
+        width: 580px;
+        height: 4px;
+        transform: translateX(-33%);
+        background: $background-color-05;
       }
 
       .expander {
@@ -31,7 +45,7 @@
 
         .bigPhoto {
           img {
-          max-width: 340px;
+          max-width: 336px;
           }
         }
 
@@ -40,6 +54,7 @@
 
           .artCategory {
             text-transform: uppercase;
+            margin-top: 10px;
           }
 
           .artTitle {
@@ -49,6 +64,7 @@
           .editorData {
             font-size: $must-read-author-data;
             line-height: 1.5rem;
+            margin-bottom: 7px;
           }
 
         }

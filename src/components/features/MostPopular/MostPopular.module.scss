@@ -1,20 +1,20 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  * {border: 1px dotted blue;}
 
   .container {
     display: flex;
     height: 450px;
     color: $light-text-color;
+    margin: 0 48px 25px 48px;
 
     .leftSidePicture {
       font-family: $primary-font;
       display: flex;
-      flex: 1;
+      flex: 1.1;
       margin-right: 3px;
       background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
-      background-size:500px 500px;
+      width: 30px;
       background-size: cover;
       position: relative;
 
@@ -40,14 +40,10 @@
             color: $light-text-color;
             }
         }
-
       }
 
     .rightSidePicture {
-      flex: 1;
       margin-left: 3px;
-      // position: relative;
-
       color: $light-text-color;
       font-weight: 500;
 
@@ -55,28 +51,28 @@
         display: flex;
         flex: 1;
 
-
         .smallPicture01 {
           background-image: url(../../../../public/images/articles/MostPopular_smallPhoto01.jpg);
           height: 220px;
-          width: 295px;
-          font-size: $base-size;
+          width: 263px;
+          font-size: $top-bar;
           background-size: cover;
-          margin: 0 3px 3px 0;
+          margin: 0 3px 2px 2px;
           position: relative;
-
 
           .smallPicture01DescWrapper {
             position:absolute;
-            bottom:20;
-            right:100;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
 
             .smallPicture01Cat {
               text-transform: uppercase;
             }
 
             .smallPicture01Desc {
-              font-size: $list-top-articles-title;
+              font-size: $block-title;
+              font-weight: 700;
             }
           }
         }
@@ -84,58 +80,84 @@
         .smallPicture02 {
           background-image: url(../../../../public/images/articles/MostPopular_smallPhoto02.jpg);
           height: 220px;
-          width: 295px;
+          width: 263px;
           font-size: $base-size;
           background-size: cover;
-          margin: 0 0 3px 3px;
+          margin: 0 0 2px 2px;
+          position: relative;
+
+          .smallPicture02DescWrapper {
+            position:absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
 
             .smallPicture02Cat {
               text-transform: uppercase;
             }
 
             .smallPicture02Desc {
-              font-size: $list-top-articles-title;
+              font-size: $block-title;
+              font-weight: 700;
             }
           }
+        }
 
       }
 
       .bottomRow {
         display: flex;
         flex: 1;
-        position: relative;
 
         .smallPicture03 {
           background-image: url(../../../../public/images/articles/MostPopular_smallPhoto03.jpg);
           height: 220px;
-          width: 295px;
+          width: 263px;
           font-size: $base-size;
           background-size: cover;
-          margin: 0 3px 0 0;
+          margin: 3px 3px 0 2px;
+          position: relative;
 
-          .smallPicture03Cat {
-            text-transform: uppercase;
-          }
+          .smallPicture03DescWrapper {
+            position:absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
 
-          .smallPicture03Desc {
-            font-size: $list-top-articles-title;
+            .smallPicture03Cat {
+              text-transform: uppercase;
+            }
+
+            .smallPicture03Desc {
+              font-size: $block-title;
+              font-weight: 700;
+            }
           }
         }
 
         .smallPicture04 {
           background-image: url(../../../../public/images/articles/MostPopular_smallPhoto04.jpg);
           height: 220px;
-          width: 295px;
+          width: 263px;
           font-size: $base-size;
           background-size: cover;
-          margin: 0 0 0 3px;
+          margin: 3px 0 0 2px;
+          position: relative;
 
-          .smallPicture04Cat {
-            text-transform: uppercase;
-          }
+          .smallPicture04DescWrapper {
+            position:absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
 
-          .smallPicture04Desc {
-            font-size: $list-top-articles-title;
+            .smallPicture04Cat {
+              text-transform: uppercase;
+            }
+
+            .smallPicture04Desc {
+              font-size: $block-title;
+              font-weight: 700;
+            }
           }
         }
       }

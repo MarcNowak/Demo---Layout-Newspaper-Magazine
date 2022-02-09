@@ -34,12 +34,16 @@ const MostPopular = () => (
         </div>
         <div className={styles.bottomRow}>
           <div className={styles.smallPicture03}>
-            <div className={styles.smallPicture03Cat}>show biz</div>
-            <div className={styles.smallPicture03Desc}>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</div>
+            <div className={styles.smallPicture03DescWrapper}>
+              <div className={styles.smallPicture03Cat}>show biz</div>
+              <div className={styles.smallPicture03Desc}>Expert Advice: The Best Cheap Retro Chic Fashion for this Fall</div>
+            </div>
           </div>
           <div className={styles.smallPicture04}>
-            <div className={styles.smallPicture04Cat}>facts</div>
-            <div className={styles.smallPictureDesc}>Bloggers Hijacked the Industry, Cutting a Piece of Earnings</div>
+            <div className={styles.smallPicture04DescWrapper}>
+              <div className={styles.smallPicture04Cat}>facts</div>
+              <div className={styles.smallPicture04Desc}>Bloggers Hijacked the Industry, Cutting a Piece of Earnings</div>
+            </div>
           </div>
         </div>
       </div>

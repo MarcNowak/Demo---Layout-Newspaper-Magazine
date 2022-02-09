@@ -8,23 +8,21 @@ const Footer = () => (
   <footer className={styles.root}>
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <span>© Copyright - Newspaper Wordpress Theme by TagDiv</span>
+        <div>© Copyright - Newspaper Wordpress Theme by TagDiv - non commercial copy</div>
       </div>
       <div className={styles.rightSide}>
-        <ul>
-          <li>
-            <a href='#'>Blog</a>
-          </li>
-          <li>
-            <a href='#'>About</a>
-          </li>
-          <li>
-            <a href='#'>Contact</a>
-          </li>
-        </ul>
+        <div>
+          <a href='#'>Blog</a>
+        </div>
+        <div>
+          <a href='#'>About</a>
+        </div>
+        <div>
+          <a href='#'>Contact</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </div >
+  </footer >
 );
 
 // Footer.propTypes = {};

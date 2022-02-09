@@ -24,19 +24,19 @@ const TopBar = () => (
       </div>
       <div className={styles.topMenu}>
         <a href='#'>
-          <span>Sign in / Join</span>
+          <span className={styles.btn}>Sign in / Join</span>
         </a>
         <a href='#'>
-          <span>Blog</span>
+          <span className={styles.btn}>Blog</span>
         </a>
         <a href='#'>
-          <span>About</span>
+          <span className={styles.btn}>About</span>
         </a>
         <a href='#'>
-          <span>Contact</span>
+          <span className={styles.btn}>Contact</span>
         </a>
         <a href='#'>
-          <span>Buy now<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
+          <span className={styles.btn}>Buy now<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
         </a>
       </div>
       <div className={styles.topBarSocialList}>

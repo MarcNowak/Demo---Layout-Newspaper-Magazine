@@ -12,8 +12,6 @@
     transform: translateY(50%);
     margin: 0 48px 0 48px;
 
-
-
     .leftSide {
       flex: 8;
     }
@@ -21,16 +19,14 @@
     .rightSide {
       display: flex;
 
+      a {
+        color: $medium-text-color;
+        padding-left: 20px;
 
-          a {
-            color: $medium-text-color;
-            padding-left: 20px;
-
-            &:hover {
-              color: $light-text-color;
-            }
-          }
-
+        &:hover {
+          color: $light-text-color;
+        }
+      }
     }
   }
 }

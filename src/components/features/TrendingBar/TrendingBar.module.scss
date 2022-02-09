@@ -32,6 +32,14 @@
       flex: 1;
       justify-content: center;
 
+      a {
+        color: $main-text-color;
+
+        &:hover {
+        color: $medium-text-color;
+        }
+      }
+
       .arrowPrev {
         padding: 0 5px 0 5px;
         border: 1px dotted $medium-text-color;

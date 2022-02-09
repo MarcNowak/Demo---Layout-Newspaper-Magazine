@@ -1,12 +1,10 @@
 @import '../../styles/settings.scss';
 
 .root {
-  // * {border: 1px dotted green}
 
   .container {
-    // display: inline;
     font-family: $primary-font;
-    margin: 0 48px 25px 48px;
+    margin: 0 24px 25px 48px;
 
     .sectionTitleWrapper {
       display: flex;
@@ -15,7 +13,7 @@
         flex: 9;
         text-transform: uppercase;
         font-weight: 500;
-        margin: 0 0 10px 15px;
+        margin: 0 0 15px 0;
         position: relative;
       }
 
@@ -25,10 +23,10 @@
         content: '';
         bottom: 10px;
         left: 50%;
-        width: 580px;
+        width: 510px;
         height: 4px;
-        transform: translateX(-33%);
-        background: $background-color-05;
+        transform: translateX(-39%);
+        background: $background-color-02;
       }
 
       .expander {
@@ -38,7 +36,6 @@
 
     .articlesWrapper {
       display: flex;
-      margin: 0 15px 0 15px;
 
       .leftArticleWrapper {
         flex: 1;
@@ -87,7 +84,7 @@
           margin-left: 10px;
 
           .rightArtEditorData {
-            font-size: $must-read-articles-title;
+            font-size: $base-size;
             font-weight: 500;
           }
 

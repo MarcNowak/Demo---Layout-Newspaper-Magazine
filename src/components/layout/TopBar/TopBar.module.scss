@@ -16,6 +16,8 @@
       display: flex;
       flex: 1;
       margin-left: 48px;
+      padding-right: 5px;
+      word-spacing: 3px;
     }
 
     .date {
@@ -26,17 +28,16 @@
       display: flex;
       flex: 5;
 
+      a {
+        color: $dark-text-color;
+
+          &:hover {
+            color: $main-text-color;
+          }
+      }
+
       .btn {
         margin-right: 16px;
-
-        a {
-          color: $medium-text-color;
-
-
-            &:hover {
-              color: $light-text-color;
-            }
-        }
       }
     }
 

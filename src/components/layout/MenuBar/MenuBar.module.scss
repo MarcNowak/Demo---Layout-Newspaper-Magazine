@@ -1,13 +1,11 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted blue;}
 
   .separator {
     border: 3px solid #dd3333;
     width: 100%;
     display: block;
-
   }
 
   .container {
@@ -18,33 +16,35 @@
     font-size: 15px;
     height: 48px;
     align-items: center;
+    margin-bottom: 25px;;
 
     .menuButtons {
       display: flex;
       flex: 5;
-      justify-content:space-between;
-      margin-top: auto;
+      justify-content:space-around;
+      margin: auto;
+
+      a { color: $light-text-color;
+
+        &:hover {
+          color: $medium-text-color;
+          }
+      }
 
       li {
         display: inline-block;
         list-style-type: none;
-
-        a {
-          text-decoration: none;
-        }
       }
 
       span {
         margin-left:  10px;
       }
-
     }
 
     .searchButton {
       flex: 1;
       text-align: end;
-      margin-right: 40px;
+      margin-right: 60px;
     }
-
   }
 }

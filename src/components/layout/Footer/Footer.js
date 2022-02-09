@@ -1,41 +1,30 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+// import PropTypes from 'prop-types';
 
 import styles from './Footer.module.scss';
 
 const Footer = () => (
   <footer className={styles.root}>
-    <Grid>
-      <Row beetween='md' middle='xs'>
-        <Col md={6} lg={6}>
-          <div className={styles.leftSide}>
-            <span>© Copyright - Newspaper Wordpress Theme by TagDiv</span>
-          </div>
-        </Col>
-        <Col md={6} lg={6}>
-          <div className={styles.rightSide}>
-            <ul>
-              <li>
-                <a href='#'>Blog</a>
-              </li>
-              <li>
-                <a href='#'>About</a>
-              </li>
-              <li>
-                <a href='#'>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </Col>
-      </Row>
-    </Grid>
-  </footer>
+    <div className={styles.container}>
+      <div className={styles.leftSide}>
+        <div>© Copyright - Newspaper Wordpress Theme by TagDiv - non commercial copy</div>
+      </div>
+      <div className={styles.rightSide}>
+        <div>
+          <a href='#'>Blog</a>
+        </div>
+        <div>
+          <a href='#'>About</a>
+        </div>
+        <div>
+          <a href='#'>Contact</a>
+        </div>
+      </div>
+    </div >
+  </footer >
 );
 
-Footer.propTypes = {
-  children: PropTypes.node,
-};
+// Footer.propTypes = {};
 
 export default Footer;

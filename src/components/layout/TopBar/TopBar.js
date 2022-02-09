@@ -17,26 +17,26 @@ const TopBar = () => (
     <div className={styles.container}>
       <div className={styles.temperature}>
         <FontAwesomeIcon icon={faCloud}></FontAwesomeIcon>
-        <p>-1,3 <sup>C</sup> New York</p>
+        <span>-1,3 <sup>C</sup> New York</span>
       </div>
       <div className={styles.date}>
-        <p>Friday, February 4, 2022</p>
+        <span>Friday, February 4, 2022</span>
       </div>
       <div className={styles.topMenu}>
         <a href='#'>
-          <p>Sign in / Join</p>
+          <span className={styles.btn}>Sign in / Join</span>
         </a>
         <a href='#'>
-          <p>Blog</p>
+          <span className={styles.btn}>Blog</span>
         </a>
         <a href='#'>
-          <p>About</p>
+          <span className={styles.btn}>About</span>
         </a>
         <a href='#'>
-          <p>Contact</p>
+          <span className={styles.btn}>Contact</span>
         </a>
         <a href='#'>
-          <p>Buy now<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></p>
+          <span className={styles.btn}>Buy now<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
         </a>
       </div>
       <div className={styles.topBarSocialList}>

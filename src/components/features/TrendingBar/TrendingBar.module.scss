@@ -1,32 +1,55 @@
 @import "../../../styles/settings.scss";
 
-
-
 .root {
-  * {border: 1px dotted blue;}
+
   font-family: $primary-font;
-  display: flex;
+  margin: 25px 0 25px 0;
 
-  .trendingNow {
-    display: block;
-    font-size: $trending-bar;
-    background-color: $background-color-01;
-    color: $light-text-color;
-    text-transform: uppercase;
+  .container {
+    display: flex;
     align-items: center;
-    flex: 1;
-  }
+    margin: 0 48px 0 48px;
 
-  .trendingDesc {
-    font-size: $base-size;
-    font-weight: 900;
-    display: inline-block;
-  }
+    .trendingNow {
+      flex: 1;
+      font-size: $trending-bar;
+      background-color: $background-color-01;
+      color: $light-text-color;
+      text-transform: uppercase;
+      padding: 3px;
+      letter-spacing: 1px;
+    }
 
-  .prevNext {
-    text-decoration: none;
-    justify-items: end;
-    padding: 0 50px 0 50px;
+    .trendingDesc {
+      font-size: $base-size;
+      font-weight: 900;
+      flex: 5;
+      margin-left: 10px;
+    }
 
+    .arrows {
+      display: flex;
+      justify-content: end;
+
+      a {
+        color: $main-text-color;
+
+        &:hover {
+        color: $medium-text-color;
+        }
+      }
+
+      .arrowPrev {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-right: 2px;
+      }
+
+      .arrowNext {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-left: 2px;
+      }
+    }
   }
 }

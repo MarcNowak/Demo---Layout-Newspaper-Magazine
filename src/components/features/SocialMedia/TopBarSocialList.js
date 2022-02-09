@@ -17,21 +17,31 @@ const TopBarSocialList = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <div className={styles.socialIcons}>
-        <a href='#'>
-          <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faVimeo}></FontAwesomeIcon>
-        </a>
-        <a href='#'>
-          <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-        </a>
+        <div className={styles.socialIcon}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.socialIcon}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.socialIcon}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.socialIcon}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faVimeo}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.socialIcon}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+          </a>
+        </div>
       </div>
     </div>
   </div>

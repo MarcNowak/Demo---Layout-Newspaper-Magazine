@@ -1,0 +1,104 @@
+@import "../../styles/settings.scss";
+
+.root {
+  // * {border: 1px dotted blue;}
+
+  .container {
+    font-family: $primary-font;
+    margin: 0 15px 0 15px;
+
+    .sectionTitle {
+      position: relative;
+      font-size: $block-title;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .sectionTitle::after {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 10px;
+      left: 50%;
+      width: 230px;
+      height: 4px;
+      transform: translateX(-33%);
+      background: $background-color-06;
+    }
+
+    .mainPhoto {
+      img {
+      max-width: 336px;
+      }
+    }
+
+    .artCategory {
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-size: $base-size;
+
+      &:hover {
+        color: $background-color-06;
+        cursor: pointer;
+      }
+    }
+
+    .mainArtTitle {
+      font-size: $middle-articles-title;
+      font-weight: 500;
+
+      &:hover {
+        color: $background-color-06;
+        cursor: pointer;
+      }
+
+
+    }
+
+    .editorDataWrapper {
+      display: flex;
+      font-size: $top-bar;
+      .editorData {
+        padding: 0 10px 10px 0;
+
+      }
+
+      .editorData {
+        font-weight: 500;
+
+        &:hover {
+          color: $background-color-06;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .artLead {
+      font-size: $base-size;
+    }
+
+    .artsWrapper {
+      display: flex;
+      img {
+        max-width: 100px;
+      }
+
+      margin-top: 20px;
+
+      .detailsWrapper {
+        font-size: $base-size;
+        padding-left: 10px;
+
+        .title {
+          font-weight: 500;
+
+          &:hover {
+            color: $background-color-06;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -3,7 +3,24 @@
 .root {
 
   .container {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
+
+    .socialIcons {
+      display: flex;
+      justify-content: space-around;
+
+      .socialIcon {
+        padding-left: 10px;
+        font-size: $block-title;
+        a {
+          color: $dark-text-color;
+
+          &:hover {
+            color: $main-text-color;
+          }
+        }
+      }
+
+    }
   }
 }

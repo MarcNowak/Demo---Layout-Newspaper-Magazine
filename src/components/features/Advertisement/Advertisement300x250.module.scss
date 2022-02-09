@@ -1,0 +1,14 @@
+@import "../../../styles/settings.scss";
+
+.root {
+
+  .container {
+    text-align: center;
+  }
+
+    .title {
+      font-family: $primary-font;
+      font-size: 10px;
+
+    }
+}

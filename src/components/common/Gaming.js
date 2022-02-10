@@ -1,11 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './Gaming.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronDown,
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Gaming = () => (
   <div className={styles.root}>
@@ -32,11 +36,20 @@ const Gaming = () => (
           <div className={styles.articleDate}>05.02.2022</div>
         </div>
         <div className={styles.articleLead}>People live better in big houses and in big clothes. I try to contrast; life today is full of contrast. We have to change!...</div>
-
+      </div>
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
+        </div>
       </div>
     </div>
-
-
   </div>
 );
 

@@ -1,27 +1,14 @@
 @import "../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted green;}
 
   .container {
     font-family: $primary-font;
-
-    .expander {
-      font-size: $top-bar;
-      // margin: auto;
-      justify-content: end;
-      align-items: center;
-      display: flex;
-
-      .expanderArrow {
-        margin-left: 10px;
-      }
-
-    }
+    margin: 25px 48px 25px 24px;
 
     .titleWrapper {
       display: flex;
-      margin: 0 40px 0 40px;
+      position: relative;
 
       .sectionTitle {
         position: relative;
@@ -29,6 +16,7 @@
         font-weight: 500;
         flex: 8.5;
         text-transform: uppercase;
+        margin-bottom: 15px;
       }
 
       .sectionTitle::after {
@@ -37,14 +25,24 @@
         content: '';
         bottom: 10px;
         left: 50%;
-        width: 180px;
+        width: 77%;
         height: 4px;
-        transform: translateX(-33%);
+        transform: translateX(-31%);
         background: $background-color-08;
       }
 
       .expander {
         flex: 1.5;
+        font-size: $top-bar;
+        padding-top: 4px;
+        justify-content: end;
+        display: flex;
+        font-size: $base-size;
+        color: $main-text-color;
+
+        .expanderArrow {
+          margin-left: 10px;
+        }
       }
     }
 
@@ -54,12 +52,12 @@
         text-align: center;
 
         img {
-          max-width: 300px;
+          max-width: 324px;
         }
       }
 
       .articleTitle {
-        margin: 10px 40px 10px 40px;
+        margin: 10px 0 10px 0;
         font-size: $block-title;
         font-weight: 500;
       }
@@ -70,13 +68,10 @@
       cursor: pointer;
     }
 
-    .articleDetailsWrapper {
-      margin: 0 40px 0 40px;
-    }
-
     .articleDetails {
       display: flex;
       font-size: $base-size;
+      margin-bottom: 10px;
 
       .articleCategory {
         flex: 1;
@@ -85,7 +80,6 @@
         &:hover {
           color: $background-color-08;
           cursor: pointer;
-
         }
       }
 
@@ -95,7 +89,6 @@
         &:hover {
           color: $background-color-08;
           cursor: pointer;
-
         }
       }
 
@@ -109,6 +102,39 @@
       color: $main-text-color;
       font-size: $base-size;
     }
-  }
 
+    .arrows {
+      margin-top: 20px;
+      display: flex;
+      justify-content: start;
+
+      a {
+        color: $main-text-color;
+
+        &:hover {
+          color: $light-text-color;
+        }
+      }
+
+      .arrowPrev {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-right: 2px;
+
+        &:hover {
+          background-color: $background-color-08;
+        }
+      }
+
+      .arrowNext {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-left: 2px;
+
+        &:hover {
+          background-color: $background-color-08;
+        }
+      }
+    }
+  }
 }

@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './Receipes.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Receipes = () => (
   <div className={styles.root}>
@@ -56,7 +63,18 @@ const Receipes = () => (
           </div>
         </div>
       </div>
-
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 );

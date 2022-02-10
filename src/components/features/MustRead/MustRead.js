@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './MustRead.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const MustRead = () => (
   <div className={styles.root}>
@@ -61,6 +68,18 @@ const MustRead = () => (
         <div className={styles.articleDetailsWrapper}>
           <div className={styles.editorData}>David Lee</div>
           <div className={styles.articleDate}>04.02.2022</div>
+        </div>
+      </div>
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
         </div>
       </div>
     </div>

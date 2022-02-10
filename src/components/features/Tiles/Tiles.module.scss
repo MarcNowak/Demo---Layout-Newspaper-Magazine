@@ -1,54 +1,29 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted green;}
 
   .container {
     font-family: $primary-font;
-    margin: 20px 0 20px 0;
-
-
-    .sectionTitle {
-      text-transform: uppercase;
-      // position: relative;
-      font-weight: 500;
-      margin: 0 0 10px 15px;
-
-      // .sectionTitle::after {
-      //   position: absolute;
-      //   display: block;
-      //   content: '';
-      //   bottom: 10px;
-      //   left: 50%;
-      //   width: 1800px;
-      //   height: 4px;
-      //   transform: translateX(10%);
-      //   background: $background-color-08;
-      // }
-
-    }
+    margin: 25px 48px 25px 48px;
 
     .tilesWrapper {
       display: flex;
-      justify-content: space-around;
-      margin: 5px 0 10px 0;
+      justify-content: space-between;
 
       .tileCat {
         text-transform: uppercase;
       }
 
       img {
-        max-width: 260px;
-        max-height: 100%;
+        max-width: 263px;
+        max-height: 316px;
       }
 
       .tile01 {
         position: relative;
-        margin: 0 3px 0 3px;
 
         .tileWrapper {
           color: $light-text-color;
-          // font-size: $base-size;
           text-align: center;
           font-weight: 500;
           position: absolute;
@@ -68,10 +43,9 @@
             padding-top: 20px;
           }
         }
-
       }
     }
   }
-
-
 }
+
+

@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './TravelGuides.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const TravelGuides = () => (
   <div className={styles.root}>
@@ -52,6 +59,18 @@ const TravelGuides = () => (
               Work Out as Much as Possible During Your All Inclusive Vacations
             </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
         </div>
       </div>
     </div>

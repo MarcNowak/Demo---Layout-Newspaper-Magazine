@@ -5,7 +5,6 @@ import BottomBarSocialList from '../../features/SocialMedia/BottomBarSocialList'
 
 import styles from './BottomBar.module.scss';
 
-
 const BottomBar = () => (
   <div className={styles.root}>
     <div className={styles.container}>
@@ -32,11 +31,6 @@ const BottomBar = () => (
       </div>
     </div>
   </div>
-
-  // <div>
-  //   Bottom Bar
-  //   <BottomBarSocialList />
-  // </div>
 );
 
 // BottomBar.propTypes = {};

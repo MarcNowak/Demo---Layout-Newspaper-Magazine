@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import styles from './Gadgets.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Gadgets = () => (
   <div className={styles.root}>
@@ -40,7 +47,7 @@ const Gadgets = () => (
             Sneak Peak: Best Smart Home Gadgets & Features to Install Today
           </div>
           <div className={styles.artDate}>
-            07.02.2022
+           Jan 15, 2022
           </div>
         </div>
       </div>
@@ -50,19 +57,29 @@ const Gadgets = () => (
         </div>
         <div className={styles.detailsWrapper}>
           <div className={styles.title}>
-          Lights Guide for your Home: Ultimate LED vs. Old Generations          </div>
+            Lights Guide for your Home: Ultimate LED vs. Old Generations
+          </div>
           <div className={styles.artDate}>
-            07.02.2022
+          Jan 15, 2022
           </div>
         </div>
       </div>
-
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 );
 
-Gadgets.propTypes = {
-  children: PropTypes.node,
-};
+Gadgets.propTypes = {};
 
 export default Gadgets;

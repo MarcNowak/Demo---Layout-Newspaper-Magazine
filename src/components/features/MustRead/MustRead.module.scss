@@ -1,12 +1,10 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted green;}
 
   .container {
     font-family: $primary-font;
-    margin-top: 20px;
-
+    margin: 0 48px 25px 12px;
 
     .sectionTitle {
       position: relative;
@@ -14,7 +12,7 @@
       font-weight: 500;
       flex: 8.5;
       text-transform: uppercase;
-      margin: 0 40px 0 40px;
+      margin-bottom: 10px;
     }
 
     .sectionTitle::after {
@@ -23,34 +21,36 @@
       content: '';
       bottom: 10px;
       left: 50%;
-      width: 200px;
+      width: 68%;
       height: 4px;
-      transform: translateX(-23%);
+      transform: translateX(-28%);
       background: $background-color-01;
     }
 
     .articleCategory {
       display: inline;
       text-transform: uppercase;
-      margin-left: 40px;
       font-size: $must-read-author-data;
 
       &:hover {
         color: $background-color-01;
         cursor: pointer;
-
       }
     }
 
     .articleTitle {
-      margin: 10px 40px 10px 40px;
+      margin: 10px 0 10px 0;
       font-size: $must-read-articles-title;
       font-weight: 500;
+
+      &:hover {
+        color: $background-color-01;
+        cursor: pointer;
+      }
     }
 
     .articleDetailsWrapper {
       display: flex;
-      margin: 0 40px 0 40px;
     }
 
     .editorData {
@@ -60,15 +60,45 @@
       &:hover {
         color: $background-color-01;
         cursor: pointer;
-
       }
     }
 
     .articleDate {
       font-size: $must-read-author-data;
-
     }
 
-  }
+    .arrows {
+      margin-top: 20px;
+      display: flex;
+      justify-content: start;
 
+      a {
+        color: $main-text-color;
+
+        &:hover {
+          color: $light-text-color;
+        }
+      }
+
+      .arrowPrev {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-right: 2px;
+
+        &:hover {
+          background-color: $background-color-01;
+        }
+      }
+
+      .arrowNext {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-left: 2px;
+
+        &:hover {
+          background-color: $background-color-01;
+        }
+      }
+    }
+  }
 }

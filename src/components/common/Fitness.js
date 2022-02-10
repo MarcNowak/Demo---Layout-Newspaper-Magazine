@@ -1,14 +1,27 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './Fitness.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronDown,
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Fitness = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <div className={styles.sectionTitleWrapper}>
         <div className={styles.sectionTitle}>fitness</div>
-        <div className={styles.expander}>All</div>
+        <div className={styles.expander}>
+          <div className={styles.expanderText}>All</div>
+          <div className={styles.expanderArrow}>
+            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+          </div>
+        </div>
         <div className={styles.articleWrapper}></div>
       </div>
       <div className={styles.articleWrapper}>
@@ -37,7 +50,7 @@ const Fitness = () => (
         </div>
         <div className={styles.articleDetailsWrapper}>
           <div className={styles.artTitle}>
-           10 Steps to Make to be Successful in Bodybuilding and in Life
+            10 Steps to Make to be Successful in Bodybuilding and in Life
           </div>
           <div className={styles.artDetailsDescriptionWrapper}>
             <div className={styles.artCat}> fitness</div>
@@ -111,8 +124,18 @@ const Fitness = () => (
           </div>
         </div>
       </div>
-
-
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 );

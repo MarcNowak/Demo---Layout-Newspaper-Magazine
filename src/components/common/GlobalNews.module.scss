@@ -23,14 +23,24 @@
         content: '';
         bottom: 10px;
         left: 50%;
-        width: 510px;
+        width: 90%;
         height: 4px;
-        transform: translateX(-39%);
+        transform: translateX(-34%);
         background: $background-color-02;
       }
 
       .expander {
-        flex: 1;
+        flex: 1.5;
+        font-size: $top-bar;
+        padding-top: 2px;
+        justify-content: end;
+        display: flex;
+        font-size: $base-size;
+        color: $main-text-color;
+
+        .expanderArrow {
+          margin-left: 10px;
+        }
       }
     }
 
@@ -39,6 +49,7 @@
 
       .leftArticleWrapper {
         flex: 1;
+        margin-right: 12px;
 
         .bigPhoto {
           img {
@@ -52,59 +63,71 @@
           .artCategory {
             text-transform: uppercase;
             margin-top: 10px;
+
+            &:hover {
+              color: $background-color-02;
+              cursor: pointer;
+            }
           }
 
           .artTitle {
             font-size: $head-top-articles-title;
+            font-weight: 500;
+
+            &:hover {
+              color: $background-color-02;
+              cursor: pointer;
+            }
           }
 
           .editorData {
             font-size: $must-read-author-data;
             line-height: 1.5rem;
             margin-bottom: 7px;
-          }
 
+            &:hover {
+              color: $background-color-02;
+              cursor: pointer;
+            }
+          }
         }
       }
+      .rightArticlesWrapper {
+        margin-left: 12px;
 
-      .rightArticleWrapper {
-        flex: 1;
-        display: flex;
-        padding-bottom: 25px;
+        .rightArticleWrapper {
+          flex: 1;
+          display: flex;
+          padding-bottom: 25px;
 
-        .articlePhoto {
-          img {
-            max-width: 100px;
-            padding-left:10px;
-          }
-        }
-
-        .rightArtDecsriptionWrapper {
-          flex: 5;
-          margin-left: 10px;
-
-          .rightArtEditorData {
-            font-size: $base-size;
-            font-weight: 500;
+          .articlePhoto {
+            img {
+              max-width: 100px;
+              padding-left:10px;
+            }
           }
 
-          .rightEditorData {
-            font-size: $top-bar;
-            line-height: 1.5rem;
+          .rightArtDecsriptionWrapper {
+            flex: 5;
+            margin-left: 10px;
+
+            .rightArtEditorData {
+              font-size: $base-size;
+              font-weight: 500;
+
+              &:hover {
+                color: $background-color-02;
+                cursor: pointer;
+              }
+            }
+
+            .rightEditorData {
+              font-size: $top-bar;
+              line-height: 1.5rem;
+            }
           }
-
-
-
-
-
-
-
         }
       }
-
-
     }
-
   }
-
 }

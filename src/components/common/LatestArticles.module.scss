@@ -1,11 +1,10 @@
 @import "../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted blue;}
 
   .container {
     font-family: $primary-font;
-    margin: 20px 15px 0 15px;
+    margin: 0px 13px 0 48px;
 
      .sectionTitle {
       position: relative;
@@ -21,15 +20,15 @@
       content: '';
       bottom: 10px;
       left: 50%;
-      width: 585px;
+      width: 75%;
       height: 4px;
-      transform: translateX(-37%);
+      transform: translateX(-38%);
       background: $background-color-01;
     }
 
     .rows {
       display:flex;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       .articleWrapper {
         flex: 1;
@@ -48,18 +47,17 @@
           &:hover {
             color: $background-color-01;
             cursor: pointer;
-
           }
         }
 
         .artTitle {
-          font-size: $list-top-articles-title;
+          font-size: $latest-articles-title;
           font-weight: 500;
+          margin-right: 25px;
 
           &:hover {
             color: $background-color-01;
             cursor: pointer;
-
           }
         }
 
@@ -75,7 +73,6 @@
             &:hover {
               color: $background-color-01;
               cursor: pointer;
-
             }
           }
 
@@ -85,7 +82,56 @@
         }
       }
     }
+
+    .arrowWrapper {
+      display: flex;
+      margin: 20px 25px 55px 0;
+    }
+
+    .arrows {
+
+      display: flex;
+      flex: 1;
+      justify-content: start;
+
+      a {
+        color: $main-text-color;
+
+        &:hover {
+          color: $light-text-color;
+        }
+      }
+
+      .arrowPrev {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-right: 2px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+
+        &:hover {
+          background-color: $background-color-01;
+        }
+      }
+
+      .arrowNext {
+        padding: 0 5px 0 5px;
+        border: 1px dotted $medium-text-color;
+        margin-left: 2px;
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+          background-color: $background-color-01;
+        }
+      }
+
+      .dots {
+        text-align: center;
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
-
-
 }

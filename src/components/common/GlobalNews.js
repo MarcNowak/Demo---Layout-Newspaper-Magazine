@@ -1,9 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import styles from './GlobalNews.module.scss';
 
-const GlobalNews = ({ children }) => (
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+const GlobalNews = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <div className={styles.sectionTitleWrapper}>
@@ -11,7 +14,10 @@ const GlobalNews = ({ children }) => (
           Global News
         </div>
         <div className={styles.expander}>
-          All
+          <div className={styles.expanderText}>All</div>
+          <div className={styles.expanderArrow}>
+            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+          </div>
         </div>
       </div>
       <div className={styles.articlesWrapper}>
@@ -96,8 +102,6 @@ const GlobalNews = ({ children }) => (
   </div>
 );
 
-GlobalNews.propTypes = {
-  children: PropTypes.node,
-};
+GlobalNews.propTypes = {};
 
 export default GlobalNews;

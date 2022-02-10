@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './LatestArticles.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const LatestArticles = () => (
 
@@ -130,8 +134,44 @@ const LatestArticles = () => (
           </div>
         </div>
       </div>
+      <div className={styles.arrowWrapper}>
+        <div className={styles.arrows}>
+          <div className={styles.arrowPrev}>
+            <a href='#'>
+              1
+            </a>
+          </div>
+          <div className={styles.arrowPrev}>
+            <a href='#'>
+              2
+            </a>
+          </div>
+          <div className={styles.arrowPrev}>
+            <a href='#'>
+              3
+            </a>
+          </div>
+          <div className={styles.dots}>
+            ...
+          </div>
+          <div className={styles.arrowPrev}>
+            <a href='#'>
+              15
+            </a>
+          </div>
+          <div className={styles.arrowNext}>
+            <a href="#">
+              <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+            </a>
+          </div>
+        </div>
+        <div className={styles.pages}>
+        Page 1 of 15
+        </div>
+      </div>
     </div>
   </div>
+
 );
 
 export default LatestArticles;

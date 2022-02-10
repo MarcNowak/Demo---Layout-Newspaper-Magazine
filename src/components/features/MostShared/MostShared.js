@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './MostShared.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from '@fortawesome/free-solid-svg-icons';
 
 const MostShared = () => (
   <div className={styles.root}>
@@ -24,7 +31,7 @@ const MostShared = () => (
         <div className={styles.artDescWrapper}>
           <div className={styles.artCat}>fitness</div>
           <div className={styles.artTitle}>
-            Style Spy: Fashion Model Goes Casual in Distinct and Original Way
+            Style Spy: Fashion Model Goes Casual in Distinct and Original
           </div>
         </div>
       </div>
@@ -62,8 +69,19 @@ const MostShared = () => (
           </div>
         </div>
       </div>
+      <div className={styles.arrows}>
+        <div className={styles.arrowPrev}>
+          <a href='#'>
+            <FontAwesomeIcon icon={faAngleDoubleLeft}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className={styles.arrowNext}>
+          <a href="#">
+            <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon>
+          </a>
+        </div>
+      </div>
     </div>
-
   </div>
 
 

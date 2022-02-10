@@ -24,19 +24,29 @@ const BottomBarSocialList = () => (
         </a>
       </div>
       <div className={styles.icons}>
-        <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+        <a href="#">
+          <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+        </a>
       </div>
       <div className={styles.icons}>
-        <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+        <a href="#">
+          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+        </a>
       </div>
       <div className={styles.icons}>
-        <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
+        <a href="#">
+          <FontAwesomeIcon icon={faPinterest}></FontAwesomeIcon>
+        </a>
       </div>
       <div className={styles.icons}>
-        <FontAwesomeIcon icon={faTumblr}></FontAwesomeIcon>
+        <a href="#">
+          <FontAwesomeIcon icon={faTumblr}></FontAwesomeIcon>
+        </a>
       </div>
       <div className={styles.icons}>
-        <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+        <a href="#">
+          <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+        </a>
       </div>
     </div>
   </div>

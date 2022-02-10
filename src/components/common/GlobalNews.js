@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
 
@@ -17,6 +18,13 @@ const GlobalNews = () => (
           <div className={styles.expanderText}>All</div>
           <div className={styles.expanderArrow}>
             <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+          </div>
+          <div className={styles.expandContent}>
+            <ul>
+              <li><a href='#'>Lifestyle</a></li>
+              <li><a href='#'>Global</a></li>
+              <li><a href='#'>Facts</a></li>
+            </ul>
           </div>
         </div>
       </div>

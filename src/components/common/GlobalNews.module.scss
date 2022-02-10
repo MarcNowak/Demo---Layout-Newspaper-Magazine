@@ -50,7 +50,6 @@
       .leftArticleWrapper {
         flex: 1;
         margin-right: 12px;
-
         .bigPhoto {
           img {
           max-width: 336px;
@@ -84,50 +83,50 @@
             font-size: $must-read-author-data;
             line-height: 1.5rem;
             margin-bottom: 7px;
-
             &:hover {
               color: $background-color-02;
               cursor: pointer;
             }
           }
+
         }
       }
       .rightArticlesWrapper {
         margin-left: 12px;
 
-        .rightArticleWrapper {
-          flex: 1;
-          display: flex;
-          padding-bottom: 25px;
+      .rightArticleWrapper {
+        flex: 1;
+        display: flex;
+        padding-bottom: 25px;
 
-          .articlePhoto {
-            img {
-              max-width: 100px;
-              padding-left:10px;
-            }
+        .articlePhoto {
+          img {
+            max-width: 100px;
+            padding-left:10px;
           }
+        }
 
-          .rightArtDecsriptionWrapper {
-            flex: 5;
-            margin-left: 10px;
+        .rightArtDecsriptionWrapper {
+          flex: 5;
+          margin-left: 10px;
 
-            .rightArtEditorData {
-              font-size: $base-size;
-              font-weight: 500;
+          .rightArtEditorData {
+            font-size: $must-read-articles-title;
+            font-weight: 500;
 
-              &:hover {
+            &:hover {
                 color: $background-color-02;
                 cursor: pointer;
               }
-            }
+          }
 
-            .rightEditorData {
-              font-size: $top-bar;
-              line-height: 1.5rem;
-            }
+          .rightEditorData {
+            font-size: $top-bar;
+            line-height: 1.5rem;
           }
         }
       }
     }
   }
+}
 }

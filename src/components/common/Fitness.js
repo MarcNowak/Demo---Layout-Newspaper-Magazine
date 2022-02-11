@@ -15,14 +15,24 @@ const Fitness = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <div className={styles.sectionTitleWrapper}>
-        <div className={styles.sectionTitle}>fitness</div>
-        <div className={styles.expander}>
+        <div className={styles.sectionTitle}>
+          fitness
+        </div>
+        <div className={styles.expander}> {/* EXPANDER START */}
           <div className={styles.expanderText}>All</div>
           <div className={styles.expanderArrow}>
             <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
           </div>
-        </div>
-        <div className={styles.articleWrapper}></div>
+          <div className={styles.expandContent}>
+            <ul>
+              <li><a href='#'>All</a></li>
+              <li><a href='#'>Global</a></li>
+              <li><a href='#'>Showbiz</a></li>
+              <li><a href='#'>Gadgets</a></li>
+              <li><a href='#'>Fitness</a></li>
+            </ul>
+          </div>
+        </div>    {/* EXPANDER END */}
       </div>
       <div className={styles.articleWrapper}>
         <div className={styles.photo}>

@@ -29,19 +29,63 @@
         background: $background-color-02;
       }
 
-      .expander {
+      .expander { /* EXPANDER START */
         flex: 1.5;
-        font-size: $top-bar;
+        font-size: $base-size;
         padding-top: 2px;
         justify-content: end;
         display: flex;
-        font-size: $base-size;
         color: $main-text-color;
+        position: relative;
+
+          &:hover {
+            color: $green-text-color;
+            cursor: pointer;
+
+            .expandContent {
+              display: block;
+            }
+          }
 
         .expanderArrow {
           margin-left: 10px;
         }
-      }
+
+        .expandContent {
+          background: $background-color-09;
+          border: 1px solid $background-color-11;
+          display: none;
+          position: absolute;
+          top: 20px;
+          left: -11px;
+          text-align: end;
+          opacity: 0.95;
+          padding: 10px 20px 0 0;
+          margin-top: 15px;
+
+          ul {
+            list-style-type: none;
+
+            li {
+              padding: 5px;
+              display: block;
+
+              &:hover {
+                color: $green-text-color;
+              }
+
+              a {
+                color: $main-text-color;
+                text-decoration: none;
+
+                &:hover {
+                  color: $green-text-color;
+                }
+              }
+            }
+          }
+        }
+      } /* EXPANDER END */
     }
 
     .articlesWrapper {
@@ -88,45 +132,45 @@
               cursor: pointer;
             }
           }
-
         }
       }
+
       .rightArticlesWrapper {
         margin-left: 12px;
 
-      .rightArticleWrapper {
-        flex: 1;
-        display: flex;
-        padding-bottom: 25px;
+        .rightArticleWrapper {
+          flex: 1;
+          display: flex;
+          padding-bottom: 25px;
 
-        .articlePhoto {
-          img {
-            max-width: 100px;
-            padding-left:10px;
+          .articlePhoto {
+            img {
+              max-width: 100px;
+              padding-left:10px;
+            }
           }
-        }
 
-        .rightArtDecsriptionWrapper {
-          flex: 5;
-          margin-left: 10px;
+          .rightArtDecsriptionWrapper {
+            flex: 5;
+            margin-left: 10px;
 
-          .rightArtEditorData {
-            font-size: $must-read-articles-title;
-            font-weight: 500;
+            .rightArtEditorData {
+              font-size: $must-read-articles-title;
+              font-weight: 500;
 
-            &:hover {
+              &:hover {
                 color: $background-color-02;
                 cursor: pointer;
               }
-          }
+            }
 
-          .rightEditorData {
-            font-size: $top-bar;
-            line-height: 1.5rem;
+            .rightEditorData {
+              font-size: $top-bar;
+              line-height: 1.5rem;
+            }
           }
         }
       }
     }
   }
-}
 }

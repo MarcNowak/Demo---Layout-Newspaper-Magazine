@@ -27,19 +27,76 @@
 
         &:hover {
           color: $medium-text-color;
-          }
+        }
       }
 
       li {
-        display: inline-block;
-        list-style-type: none;
-      }
+        display: inline;
+       }
 
       span {
         margin-left:  10px;
       }
-    }
 
+      .expander {
+        height: 100%;
+        flex: 1.5;
+        font-size: $base-size;
+        justify-content: center;
+        display: flex;
+        position: relative;
+
+        .expanderText {
+          font-size: 15px;
+        }
+
+        .expanderArrow {
+          margin: 0 10px 0 10px;
+        }
+
+        .expandContent {
+          background: $background-color-09;
+          text-align: center;
+          display: none;
+          position: absolute;
+          top:30px;
+          transform: translateX(12.5%);
+          box-shadow: 2px 2px 2px grey;
+          margin-top: 15px;
+          z-index: 100;
+
+          ul {
+            padding: 0px 2.5px 0 2.5px;
+
+            li {
+              padding: 10px 7px 0 7px;
+              display:flex;
+              color: $main-text-color;
+
+              .artCat {
+              font-size: 15px;
+              }
+
+              a {
+                color: $main-text-color;
+                font-weight: 500;
+                text-decoration: none;
+
+                img {
+                  max-width: 210px;
+                }
+              }
+
+              ul {
+                li {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .searchButton {
       flex: 1;
       text-align: end;

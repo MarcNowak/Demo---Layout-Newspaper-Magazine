@@ -170,4 +170,16 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+      .articlesWrapper {
+      flex-direction: column;
+      }
+
+      .rightArticlesWrapper {
+        margin-left: 0px;
+      }
+    }
+  }
 }

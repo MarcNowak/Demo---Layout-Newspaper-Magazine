@@ -5,7 +5,7 @@
   background-color: $background-color-10;
   color: $medium-text-color;
   font-size: $base-size;
-  height: 37px;
+  min-height: 37px;
 
   .container {
     display: flex;
@@ -27,6 +27,29 @@
           color: $light-text-color;
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+    position: relative;
+    }
+
+    .leftSide, .rightSide {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .leftSide {
+      position: absolute;
+      top: -40%;
+      left: 15%;
+    }
+
+    .rightSide {
+      position: relative;
+      bottom: -7px;
+      left: 33%;
     }
   }
 }

@@ -88,4 +88,18 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+
+      .tilesWrapper {
+        flex-direction: column;
+
+        .tileWrapper {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
 }

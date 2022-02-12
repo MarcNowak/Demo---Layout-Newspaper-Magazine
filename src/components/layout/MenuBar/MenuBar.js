@@ -15,7 +15,9 @@ import {
   faHeartbeat,
   faVideo,
   faSearch,
-  // faChevronDown,
+  faChevronDown,
+  faAngleLeft,
+  faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 const MenuBar = () => (
@@ -48,9 +50,14 @@ const MenuBar = () => (
             <a href='#'>
               <div className={styles.expanderText}>Fashion</div>
             </a>
+            <div className={styles.expanderArrow}>
+              <a href='#'>
+                <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon> {/* EXPANDER START */}
+              </a>
+            </div>
             <div className={styles.expandContent}>
               <ul>
-                <li className={styles.hidden}>
+                <li>
                   <ul>
                     <li>
                       <a href='#'><img src='/images/mainlayout/expandMenu01.jpg' alt='01' /></a>
@@ -117,6 +124,33 @@ const MenuBar = () => (
                     </li>
                   </ul>
                 </li>
+              </ul>
+              <ul className={styles.arrows}>
+                <ul>
+                  <li>
+                    <div className={styles.arrowPrev}>
+                      <a href='#'>
+                        <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className={styles.arrowNext}>
+                      <a href="#">
+                        <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </ul>
+              <ul className={styles.categories}>
+                <li><a href ='#'>All</a></li>
+                <li>Arts</li>
+                <li>Health</li>
+                <li>Music</li>
+                <li>Receipes</li>
+                <li>Travel</li>
+                <li>What&rsquo;s Hot</li>
               </ul>
             </div>
           </div>

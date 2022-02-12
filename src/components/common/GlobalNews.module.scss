@@ -39,9 +39,6 @@
         position: relative;
 
           &:hover {
-            color: $green-text-color;
-            cursor: pointer;
-
             .expandContent {
               display: block;
             }

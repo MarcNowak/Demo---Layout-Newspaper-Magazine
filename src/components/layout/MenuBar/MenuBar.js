@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
@@ -14,6 +15,9 @@ import {
   faHeartbeat,
   faVideo,
   faSearch,
+  faChevronDown,
+  faAngleLeft,
+  faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 const MenuBar = () => (
@@ -36,9 +40,121 @@ const MenuBar = () => (
           </a>
         </li>
         <li>
-          <a href='#'>
-            <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon><span>Fashion</span>
-          </a>
+          {/* TOP EXPAND MENU FASHION START*/}
+          <div className={styles.expander}>
+            <div className={styles.expanderArrow}>
+              <a href='#'>
+                <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon> {/* EXPANDER START */}
+              </a>
+            </div>
+            <a href='#'>
+              <div className={styles.expanderText}>Fashion</div>
+            </a>
+            <div className={styles.expanderArrow}>
+              <a href='#'>
+                <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon> {/* EXPANDER START */}
+              </a>
+            </div>
+            <div className={styles.expandContent}>
+              <ul>
+                <li>
+                  <ul>
+                    <li>
+                      <a href='#'><img src='/images/mainlayout/expandMenu01.jpg' alt='01' /></a>
+                    </li>
+                    <li>
+                      TRAVEL
+                    </li>
+                    <li className={styles.artCat}>
+                      <a href='#'>
+                        Exotic Trips are Getting More and More Popular in South America
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href='#'><img src='/images/mainlayout/expandMenu02.jpg' alt='01' /></a>
+                    </li>
+                    <li>
+                      TRAVEL
+                    </li>
+                    <li className={styles.artCat}>
+                      <a href='#'>
+                        Out of This World Experience with these Exotic Travel Destinations
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className={styles.artCat}>
+                      <a href='#'><img src='/images/mainlayout/expandMenu03.jpg' alt='01' /></a>
+                    </li>
+                    <li>
+                      TRAVEL
+                    </li>
+                    <li className={styles.artCat}>
+                      <a href='#'>
+                        Work Out as Much as Possible During Your All Inclusive Vacations
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className={styles.artCat}>
+                      <a href='#'><img src='/images/mainlayout/expandMenu04.jpg' alt='01' /></a>
+                    </li>
+                    <li>
+                      TRAVEL
+                    </li>
+                    <li className={styles.artCat}>
+                      <a href='#'>
+                        Bali Travel Experience: Combine Luxury with a Real Life Adventure
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className={styles.artCat}>
+                      <a href='#'><img src='/images/mainlayout/expandMenu05.jpg' alt='01' /></a>
+                    </li>
+                    <li>
+                      TRAVEL
+                    </li>
+                    <li className={styles.artCat}>
+                      <a href='#'>
+                        A Breakthough for This Year: Space Travel Might Become a Thing
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className={styles.arrows}>
+                <ul>
+                  <li>
+                    <div className={styles.arrowPrev}>
+                      <a href='#'>
+                        <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className={styles.arrowNext}>
+                      <a href="#">
+                        <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </ul>
+              <ul className={styles.categories}>
+                <li><a href ='#'>All</a></li>
+                <li>Arts</li>
+                <li>Health</li>
+                <li>Music</li>
+                <li>Receipes</li>
+                <li>Travel</li>
+                <li>What&rsquo;s Hot</li>
+              </ul>
+            </div>
+          </div>
+          {/* TOP EXPAND MENU FASHION END*/}
         </li>
         <li>
           <a href='#'>

@@ -27,19 +27,125 @@
 
         &:hover {
           color: $medium-text-color;
-          }
+        }
       }
 
       li {
-        display: inline-block;
-        list-style-type: none;
-      }
+        display: inline;
+       }
 
       span {
         margin-left:  10px;
       }
-    }
 
+      .expander {
+        height: 100%;
+        flex: 1.5;
+        font-size: $base-size;
+        justify-content: center;
+        display: flex;
+        position: relative;
+
+        &:hover {
+          .expandContent {
+            display: block;
+          }
+        }
+
+        .expanderText {
+          font-size: 15px;
+        }
+
+        .expanderArrow {
+          margin: 1px 10px 0 10px;
+        }
+
+        .expandContent {
+          background: $background-color-09;
+          text-align: center;
+          display: none;
+          position: absolute;
+          top:30px;
+          transform: translateX(12%);
+          box-shadow: 2px 2px 2px grey;
+          margin-top: 10px;
+          z-index: 100;
+
+          ul {
+            padding: 0px 2.5px 0 2.5px;
+
+            li {
+              padding: 10px 7px 0 7px;
+              display:flex;
+              color: $main-text-color;
+
+              .artCat {
+              font-size: 15px;
+              }
+
+              a {
+                color: $main-text-color;
+                font-weight: 500;
+                text-decoration: none;
+
+                &:hover {
+                  color: $green-text-color;
+                  cursor: pointer;
+                }
+
+                img {
+                  max-width: 210px;
+                }
+              }
+
+              ul {
+                li {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .arrows {
+            display: inline-block;
+            font-size: $middle-articles-title;
+            margin: 15px 0 10px 0;
+
+            ul {
+                display: flex;
+              }
+
+            .arrowPrev, .arrowNext {
+              margin: 0 5px 0 5px;
+              width: 30px;
+              border: 1px solid grey;
+
+              &:hover {
+                background-color: $green-text-color;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .categories {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 25px 0;
+            font-size: $block-title;
+            font-weight: 500;
+
+            li {
+              margin: 0 15px 0 15px;
+
+              &:hover {
+                color: $green-text-color;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
     .searchButton {
       flex: 1;
       text-align: end;

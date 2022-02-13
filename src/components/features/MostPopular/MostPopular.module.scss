@@ -1,7 +1,7 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  * {border: 1px dotted blue;}
+  // * {border: 1px dotted blue;}
 
   .container {
     display: flex;
@@ -15,10 +15,9 @@
     }
 
     .leftSidePictureContainer {
+      * {border: 1px dotted red;}
 
-      width: 100%;
-
-      img {
+        img {
         width: 100%;
       }
 
@@ -44,26 +43,28 @@
     }
 
     .rightSidePictureContainer {
+      * {border: 1px dotted blue;}
       flex: 1;
-      display:flex;
-      flex-wrap: wrap;
+      display: flex;
+      width: 50%;
 
       .articleWrapper01,
       .articleWrapper02,
       .articleWrapper03,
       .articleWrapper04 {
-        flex: 1;
+
         position: relative;
         margin-left: 4px;
         line-height: 1.2;
-        width: 100%;
+
+        width: 50%;
 
         img {
-          min-height: 220px;
           width: 100%;
         }
 
         .artDetails {
+
           position: absolute;
           top: 150px;
           left: 10px;

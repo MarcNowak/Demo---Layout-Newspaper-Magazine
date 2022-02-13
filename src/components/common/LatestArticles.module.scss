@@ -134,4 +134,20 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+
+      .rows {
+        flex-direction: column;
+        display: block;
+
+        img {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        }
+      }
+    }
+  }
 }

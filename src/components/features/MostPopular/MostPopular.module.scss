@@ -1,163 +1,77 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  // * {border: 1px dotted blue;}
 
   .container {
     display: flex;
-    height: 445px;
+    font-family: $primary-font;
     color: $light-text-color;
     margin: 0 48px 25px 48px;
 
-    .leftSidePicture {
-      font-family: $primary-font;
-      display: flex;
-      flex: 1.1;
-      margin-right: 3px;
-      background-image: url(../../../../public/images/articles/MostPopular_bigPicture.jpg);
-      width: 30px;
-      background-size: cover;
+    .postCategory {
+      text-transform: uppercase;
+      font-size: $base-size;
+    }
+
+    .leftSidePictureContainer {
+
+      img {
+        max-width: 530px;
+        min-height: 200px;
+        }
+
+      flex: 1;
       position: relative;
 
-        .articleDescriptionWrapper {
+      .articleDescriptionWrapper {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+
+        .leftSideTitle {
+          font-size: $head-top-articles-title;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .editorDate {
+          font-size: $base-size;
+        }
+      }
+    }
+
+    .rightSidePictureContainer {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        max-width: 263px;
+        min-height: 237px;
+      }
+
+      .articleWrapper01,
+      .articleWrapper02,
+      .articleWrapper03,
+      .articleWrapper04 {
+        flex: 1;
+        position: relative;
+        max-width: 263px;
+        max-height: 235px;
+        margin-left: 4px;
+        line-height: 1.2;
+
+        .artDetails {
           position: absolute;
-          bottom: 20px;
-          left: 20px;
+          top: 150px;
+          left: 10px;
+          right: 10px;
 
-          .postCategory {
-            font-size: $base-size;
-            color: $light-text-color;
-            text-transform: uppercase;
-          }
-
-          .leftSideTitle {
-            font-size: $base-size-doubled;
-            color: $light-text-color;
+          .rightSideTitle {
+            margin-top: 10px;
             font-weight: 500;
-          }
-
-          .editorDate {
-            font-size: $base-size;
-            color: $light-text-color;
-            }
-        }
-      }
-
-    .rightSidePicture {
-      margin-left: 3px;
-      color: $light-text-color;
-      font-weight: 500;
-
-      .upperRow {
-        display: flex;
-        flex: 1;
-
-        .smallPicture01 {
-          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto01.jpg);
-          height: 220px;
-          width: 263px;
-          font-size: $top-bar;
-          background-size: cover;
-          margin: 0 3px 2px 2px;
-          position: relative;
-
-          .smallPicture01DescWrapper {
-            position:absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-
-            .smallPicture01Cat {
-              text-transform: uppercase;
-            }
-
-            .smallPicture01Desc {
-              font-size: $block-title;
-              font-weight: 700;
-            }
-          }
-        }
-
-        .smallPicture02 {
-          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto02.jpg);
-          height: 220px;
-          width: 263px;
-          font-size: $base-size;
-          background-size: cover;
-          margin: 0 0 2px 2px;
-          position: relative;
-
-          .smallPicture02DescWrapper {
-            position:absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-
-            .smallPicture02Cat {
-              text-transform: uppercase;
-            }
-
-            .smallPicture02Desc {
-              font-size: $block-title;
-              font-weight: 700;
-            }
-          }
-        }
-
-      }
-
-      .bottomRow {
-        display: flex;
-        flex: 1;
-
-        .smallPicture03 {
-          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto03.jpg);
-          height: 220px;
-          width: 263px;
-          font-size: $base-size;
-          background-size: cover;
-          margin: 3px 3px 0 2px;
-          position: relative;
-
-          .smallPicture03DescWrapper {
-            position:absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-
-            .smallPicture03Cat {
-              text-transform: uppercase;
-            }
-
-            .smallPicture03Desc {
-              font-size: $block-title;
-              font-weight: 700;
-            }
-          }
-        }
-
-        .smallPicture04 {
-          background-image: url(../../../../public/images/articles/MostPopular_smallPhoto04.jpg);
-          height: 220px;
-          width: 263px;
-          font-size: $base-size;
-          background-size: cover;
-          margin: 3px 0 0 2px;
-          position: relative;
-
-          .smallPicture04DescWrapper {
-            position:absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-
-            .smallPicture04Cat {
-              text-transform: uppercase;
-            }
-
-            .smallPicture04Desc {
-              font-size: $block-title;
-              font-weight: 700;
-            }
           }
         }
       }

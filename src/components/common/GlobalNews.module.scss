@@ -170,4 +170,77 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+
+      .sectionTitleWrapper {
+
+        .sectionTitle::after {
+          width: 60%;
+           transform: translateX(-14%);
+        }
+
+        .expander { /* EXPANDER START */
+          flex: 1.5;
+          font-size: $base-size;
+          padding-top: 2px;
+          justify-content: end;
+          display: flex;
+          color: $main-text-color;
+          position: relative;
+
+            .expandContent {
+            top: 10px;
+            left: -54px;
+            }
+          } /* EXPANDER END */
+        }
+
+      .articlesWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .leftArticleWrapper {
+
+          .articleDescriptionWrapper {
+
+            .artTitle {
+              line-height: normal;
+            }
+
+            .editorData {
+              line-height: 1.5rem;
+              margin-bottom: 0px;
+            }
+          }
+        }
+
+        .rightArticlesWrapper {
+          margin-left: 0px;
+
+          .rightArticleWrapper {
+            padding: 5px 0 5px 0;
+
+            .articlePhoto {
+              img {
+                max-width: 100px;
+                padding-left: 0px;
+              }
+            }
+
+            .rightArtDecsriptionWrapper {
+
+              margin-left: 5px;
+              line-height: normal;
+
+              .rightEditorData {
+                line-height: 1.0rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

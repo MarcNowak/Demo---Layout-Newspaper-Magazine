@@ -101,4 +101,25 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+
+    .container {
+      margin: 0 0px 10px 12px;
+
+      .sectionTitle {
+        margin-bottom: 0px;
+      }
+
+      .sectionTitle::after {
+        width: 72%;
+        transform: translateX(-31%);
+      }
+
+      .articleTitle {
+        margin: 0px 0 10px 0;
+        line-height: normal;
+      }
+    }
+  }
 }

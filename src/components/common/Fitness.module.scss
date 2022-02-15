@@ -186,4 +186,64 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px 24px 25px 48px;
+
+      .sectionTitleWrapper {
+        display: flex;
+
+        .sectionTitle::after {
+          left: 50%;
+          width: 75%;
+          transform: translateX(-29%);
+        }
+
+        .expander { /* EXPANDER START */
+          flex: 1.5;
+          font-size: $base-size;
+          padding-top: 2px;
+          justify-content: end;
+          display: flex;
+          color: $main-text-color;
+          position: relative;
+
+            .expandContent {
+            top: 10px;
+            left: -54px;
+            }
+          }
+        } /* EXPANDER END */
+
+      .articleWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+
+        .photo {
+          margin: 0 0 0 0;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .articleDetailsWrapper {
+          margin: 5px 0 5px 0;
+          line-height: normal;
+        }
+        .artDetailsDescriptionWrapper {
+
+          .artCat {
+            flex: 2;
+          }
+
+          .editorData {
+            flex: 2;
+           font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 }

@@ -7,9 +7,7 @@
     font-family: $primary-font;
     font-size: $popular-categories-list;
     line-height: 2.5em;
-    margin-top: 20px;
     margin: 20px 48px 0 12px;
-
 
     .sectionTitle {
       position: relative;
@@ -17,7 +15,6 @@
       font-weight: 500;
       flex: 8.5;
       text-transform: uppercase;
-      // margin: 0 40px 0 40px;
     }
 
     .sectionTitle::after {
@@ -39,18 +36,41 @@
       &:hover {
         color: $background-color-01;
         cursor: pointer;
-
       }
     }
 
+    .category {
+      flex: 8;
+    }
+
+    .total {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .container {
+      line-height: 2.5em;
+      margin: 0px 48px 0 12px;
+
+      .sectionTitle::after {
+        width: 78%;
+        transform: translateX(-20%);
+      }
+
+      .categoriesWrapper {
+        line-height: 1.5rem;
+      }
+
       .category {
-        flex: 8;
+        flex: 15;
       }
 
       .total {
         flex: 1;
+        text-align: end;
       }
-
+    }
   }
-
 }

@@ -64,9 +64,9 @@
         .artDetails {
 
           position: absolute;
-          top: 60%;
-          left: 4%;
-          right: 4%;
+          bottom: 20px;
+          left: 10px;
+          right: 10px;
 
           .rightSideTitle {
             margin-top: 10px;
@@ -76,4 +76,27 @@
       }
     }
   }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+
+    .rightSidePictureContainer {
+      margin-top: 5px;
+
+      .articleWrapper02 {
+        margin-bottom: 2px;
+      }
+        .postCategory {
+          font-size: $top-bar;
+        }
+
+        .rightSideTitle {
+          font-size: $base-size;
+        }
+      }
+    }
+  }
 }
+

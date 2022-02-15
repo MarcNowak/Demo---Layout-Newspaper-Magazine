@@ -49,13 +49,21 @@
 
   @media (max-width: 768px) {
     .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .tilesWrapper {
         flex-direction: column;
 
-        .tileWrapper {
-          max-width: 200px;
-        }
+        .tile01 {
+          margin-bottom: 5px;
+
+          .tileWrapper {
+            max-width: 100%;
+            left: 0px;
+          }
+       }
       }
     }
   }

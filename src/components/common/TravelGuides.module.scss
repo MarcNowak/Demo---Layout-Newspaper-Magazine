@@ -92,11 +92,33 @@
   @media (max-width: 768px) {
     .container {
 
+      .sectionTitle::after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 10px;
+        left: 50%;
+        width: 70%;
+        height: 4px;
+        transform: translateX(-15%);
+        background: $background-color-03;
+      }
+
+
       .tilesWrapper {
         flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .tileWrapper {
-          max-width: 200px;
+        .tile01 {
+          margin-bottom: 5px;
+
+          .tileWrapper {
+            max-width: 200px;
+            max-width: 100%;
+            left: 0px;
+          }
         }
       }
     }

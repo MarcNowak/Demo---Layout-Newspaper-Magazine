@@ -170,41 +170,4 @@
       }
     }
   }
-
-  @media (max-width: 768px) {
-    .container {
-
-      .sectionTitleWrapper {
-
-      .sectionTitle {
-        flex: 9;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin: 0 0 15px 0;
-        position: relative;
-      }
-
-      .sectionTitle::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 10px;
-        left: 50%;
-        max-width: 200px;
-        height: 4px;
-        transform: translateX(-34%);
-        background: $background-color-02;
-      }
-
-      }
-      .articlesWrapper {
-      flex-direction: column;
-      }
-
-      .rightArticlesWrapper {
-        margin-left: 0px;
-      }
-    }
-  }
-
 }

@@ -63,8 +63,10 @@
 
   @media (max-width: 768px) {
     .container {
+      margin: 0 5px 10px 5px;
       flex-direction: column;
       text-align: center;
+      align-items: center;
 
       .trendingNow {
         margin-bottom: 10px;

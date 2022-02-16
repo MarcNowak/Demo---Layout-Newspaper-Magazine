@@ -130,4 +130,33 @@
       }
     }
   }
+
+    @media (max-width: 768px) {
+
+    .container {
+
+      margin: 0 5px 25px 5px;
+
+      .sectionTitle::after {
+         width: 78%;
+        transform: translateX(-36%);
+      }
+
+      .mainPhoto {
+        img {
+        max-width: 100%;
+        }
+      }
+
+      .mainArtTitle {
+        line-height: normal;
+      }
+
+      .artsWrapper {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
 }

@@ -173,12 +173,13 @@
 
   @media (max-width: 768px) {
     .container {
+      margin: 10px 5px 10px 5px;
 
       .sectionTitleWrapper {
 
         .sectionTitle::after {
-          width: 60%;
-           transform: translateX(-14%);
+          width: 70%;
+           transform: translateX(-22%);
         }
 
         .expander { /* EXPANDER START */
@@ -202,6 +203,13 @@
         flex-direction: column;
 
         .leftArticleWrapper {
+          margin-right: 0px;
+
+          .bigPhoto {
+            img {
+              max-width: 100%;
+            }
+          }
 
           .articleDescriptionWrapper {
 
@@ -217,7 +225,7 @@
         }
 
         .rightArticlesWrapper {
-          margin-left: 0px;
+          margin: 10px 0 0 0;
 
           .rightArticleWrapper {
             padding: 5px 0 5px 0;

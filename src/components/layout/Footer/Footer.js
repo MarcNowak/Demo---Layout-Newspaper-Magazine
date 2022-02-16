@@ -8,7 +8,7 @@ const Footer = () => (
   <footer className={styles.root}>
     <div className={styles.container}>
       <div className={styles.leftSide}>
-        <div>© Copyright - Newspaper Wordpress Theme by TagDiv - non commercial copy</div>
+        <div>© Copyright - Newspaper Wordpress Theme by TagDiv</div>
       </div>
       <div className={styles.rightSide}>
         <div>

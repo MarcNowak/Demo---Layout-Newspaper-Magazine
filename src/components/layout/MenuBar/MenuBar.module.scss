@@ -152,4 +152,10 @@
       margin-right: 60px;
     }
   }
+
+  @media (max-width: 768px) {
+    .container {
+      display: none;
+    }
+  }
 }

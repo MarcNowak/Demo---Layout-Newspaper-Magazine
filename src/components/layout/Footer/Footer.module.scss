@@ -32,24 +32,18 @@
 
   @media (max-width: 768px) {
     .container {
-    position: relative;
-    }
-
-    .leftSide, .rightSide {
-      text-align: center;
-      justify-content: center;
+    margin: 0 5px 0 5px;
+    justify-content: center;
+    height: 50px;
     }
 
     .leftSide {
       position: absolute;
       top: -40%;
-      left: 15%;
     }
 
     .rightSide {
       position: relative;
-      bottom: -7px;
-      left: 33%;
     }
   }
 }

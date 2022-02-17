@@ -48,8 +48,9 @@
           text-align: center;
           font-weight: 500;
           position: absolute;
-          left: 5px;
-          bottom: 20px;
+          left: center;
+          bottom: 10%;
+          margin: 0 5px 0 5px;
         }
       }
     }
@@ -91,19 +92,13 @@
 
   @media (max-width: 768px) {
     .container {
-      margin: 0 5px 25px 5px;
+      margin: 0 5px 25px 5px !important;
 
       .sectionTitle::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 10px;
         left: 50%;
-        width: 65%;
-        height: 4px;
-        transform: translateX(-25%);
-        background: $background-color-03;
-      }
+        width: 53% !important;
+        transform: translateX(-10%) !important;
+       }
 
 
       .tilesWrapper {
@@ -118,6 +113,18 @@
           margin-bottom: 5px;
         }
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      margin: 0 48px 25px 48px;
+
+      .sectionTitle::after {
+        left: 50%;
+        width: 75%;
+        transform: translateX(-35%);
+       }
     }
   }
 

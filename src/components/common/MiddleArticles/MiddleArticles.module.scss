@@ -27,4 +27,17 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+      display: flex;
+
+      .middleArticlesLeft {
+        flex: 1;
+      }
+
+      .middleArticlesRight {
+        flex: 1;
+      }
+  }
+  }
 }

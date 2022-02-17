@@ -112,8 +112,8 @@
       }
 
       .sectionTitle::after {
-        width: 72%;
-        transform: translateX(-31%);
+        width: 68%;
+        transform: translateX(-29%);
       }
 
       .articleTitle {
@@ -121,5 +121,12 @@
         line-height: normal;
       }
     }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      margin: 10px 5px 10px 5px;
+    }
+
   }
 }

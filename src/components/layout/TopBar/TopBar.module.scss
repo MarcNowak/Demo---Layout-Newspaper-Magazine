@@ -53,4 +53,20 @@
       display: none;
     }
   }
+
+  @media (max-width: 1200px) {
+    .container {
+      .temperature {
+        flex: 1.5;
+      }
+
+      .date {
+        flex: 2;
+      }
+
+      .topMenu {
+        flex: 4.5;
+      }
+    }
+  }
 }

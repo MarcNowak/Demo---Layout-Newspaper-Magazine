@@ -186,7 +186,7 @@
 
     .container {
       font-family: $primary-font;
-      margin: 0px 5px 25px 5px;
+      margin: 0px 5px 25px 5px !important;
 
       .titleWrapper {
 
@@ -221,6 +221,23 @@
         .articleTitle {
           margin: 0 0 10px 0;
           line-height: normal;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .container {
+      font-family: $primary-font;
+      margin: 0px 48px 15px 12px;
+
+      .articleWrapper {
+
+        .articlePhoto {
+          img {
+            max-width: 100%;
+          }
         }
       }
     }

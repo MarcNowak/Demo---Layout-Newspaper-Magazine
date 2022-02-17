@@ -55,8 +55,8 @@
       margin: 0px 5px 0 5px;
 
       .sectionTitle::after {
-        width: 70%;
-        transform: translateX(-29%);
+        width: 65%;
+        transform: translateX(-26%);
       }
 
       .categoriesWrapper {
@@ -71,6 +71,12 @@
         flex: 1;
         text-align: end;
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+    margin: 0px 5px 0 5px;
     }
   }
 }

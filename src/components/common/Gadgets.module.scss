@@ -131,15 +131,15 @@
     }
   }
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
 
     .container {
 
       margin: 0 5px 25px 5px;
 
       .sectionTitle::after {
-         width: 78%;
-        transform: translateX(-36%);
+        width: 72%;
+        transform: translateX(-31%);
       }
 
       .mainPhoto {
@@ -156,6 +156,17 @@
         img {
           max-width: 100px;
         }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .container {
+
+      .sectionTitle::after {
+        width: 65%;
+        transform: translateX(-31%);
       }
     }
   }

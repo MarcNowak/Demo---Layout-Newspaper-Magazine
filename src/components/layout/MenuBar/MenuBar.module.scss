@@ -17,6 +17,14 @@
     height: 48px;
     align-items: center;
 
+    .navbar {
+      display: flex;
+      flex: 5;
+      justify-content:space-around;
+      margin: auto;
+
+    }
+
     .menuButtons {
       display: flex;
       flex: 5;

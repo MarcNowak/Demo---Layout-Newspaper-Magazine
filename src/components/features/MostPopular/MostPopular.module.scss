@@ -8,12 +8,30 @@
     color: $light-text-color;
     margin: 0 48px 25px 48px;
 
+
     .postCategory {
       text-transform: uppercase;
       font-size: $base-size;
     }
 
     .leftSidePictureContainer {
+      position: relative;
+
+      .leftPhoto {
+        position: absolute;
+
+        .leftPhoto::after {
+          content: '';
+          height: 100%;
+          background-color: #2db300;
+          opacity: 0.8;
+          position: absolute;
+        }
+
+        .leftPhoto:hover:after{
+            transition: 1s ease;
+        }
+      }
 
         img {
         width: 100%;

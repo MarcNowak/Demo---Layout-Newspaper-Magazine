@@ -17,25 +17,32 @@
     .leftSidePictureContainer {
       position: relative;
 
-      .leftPhoto {
-        position: absolute;
+      // .leftPhoto {
+      //   position: absolute;
+      //   // width: 50%;
+      //   height: 100%;
+      //   // border: 5px
+      // }
 
-        .leftPhoto::after {
-          content: '';
-          height: 100%;
-          background-color: #2db300;
-          opacity: 0.8;
-          position: absolute;
-        }
+      // .leftPhoto::after {
+      //   content: '';
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: #2db300;
+      //   display: none;
+      //   opacity: 0.1;
+      //   left: 0px;
+      //   top: 0px;
+      //   position: absolute;
+      // }
 
-        .leftPhoto:hover:after{
-            transition: 1s ease;
-        }
-      }
+      // .leftPhoto:hover:after{
+      //   display: block;
+      // }
 
         img {
         width: 100%;
-      }
+        }
 
       flex: 1;
       position: relative;

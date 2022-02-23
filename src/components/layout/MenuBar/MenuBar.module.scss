@@ -20,8 +20,13 @@
     .menuButtons {
       display: flex;
       flex: 5.5;
+      align-items: center;
       justify-content:space-around;
-      margin: auto;
+
+      .lineHeight {
+        margin: 17px 0 -27px 0;
+        height: 48px;
+      }
 
       a { color: $light-text-color;
 
@@ -32,7 +37,7 @@
 
       li {
         display: inline;
-       }
+      }
 
       span {
         margin-left:  10px;
@@ -40,11 +45,14 @@
 
       .expander {
         height: 100%;
-        flex: 1.5;
         font-size: $base-size;
         justify-content: center;
         display: flex;
         position: relative;
+
+        .test {     /* related to MebuBar.js L-45 */
+          padding: 0 0 0 0;
+        }
 
         &:hover {
           .expandContent {
@@ -66,10 +74,10 @@
           display: none;
           position: absolute;
           top:30px;
-          transform: translateX(12%);
+          transform: translateX(11.5%);
           box-shadow: 2px 2px 2px grey;
           margin-top: 10px;
-          z-index: 100;
+          z-index: 1;
 
           ul {
             padding: 0px 2.5px 0 2.5px;
@@ -80,7 +88,7 @@
               color: $main-text-color;
 
               .artCat {
-              font-size: 15px;
+              font-size: 13px;
               }
 
               a {
@@ -153,25 +161,14 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .container {
-      display: none;
-    }
-  }
-
   @media (max-width: 1200px) {
     .container {
 
       span {
-        margin-left: 8px !important;
+        margin-left: 8px;
       }
 
       .expander {
-        height: 100%;
-        font-size: $base-size;
-        justify-content: center;
-        display: flex;
-        position: relative;
 
         &:hover {
           .expandContent {
@@ -188,96 +185,48 @@
         }
 
         .expandContent {
-          background: $background-color-09;
-          text-align: center;
-          display: none;
-          position: absolute;
-          top:30px;
-          transform: translateX(21%) !important;
-          box-shadow: 2px 2px 2px grey;
-          margin-top: 24px !important;
+
+          transform: translateX(21%);
+          margin-top: 24px;
           z-index: 100;
 
           ul {
-            padding: 0px 2.5px 0 2.5px;
-
             li {
-              padding: 10px 7px 0 7px;
-              display:flex;
-              color: $main-text-color;
-
               .artCat {
-              font-size: 10px !important;
+              font-size: 10px;
               }
-
               a {
-                color: $main-text-color;
-                font-weight: 500;
-                text-decoration: none;
-
-                &:hover {
-                  color: $green-text-color;
-                  cursor: pointer;
-                }
-
                 img {
-                  max-width: 100% !important;
-                }
-              }
-
-              ul {
-                li {
-                  display: block;
+                  max-width: 100%;
                 }
               }
             }
           }
 
           .arrows {
-            display: inline-block;
-            font-size: $middle-articles-title;
-            margin: 0 0 0 0 !important;
+            margin: 0 0 0 0;
 
             ul {
-                display: flex;
-              }
-
-            .arrowPrev, .arrowNext {
-              margin: 0 5px 0 5px;
-              width: 30px;
-              border: 1px solid grey;
-
-              &:hover {
-                background-color: $green-text-color;
-                cursor: pointer;
-              }
+              display: flex;
             }
           }
 
           .categories {
-            display: flex;
-            justify-content: center;
-            margin: 0 0 0 0 !important;
-            font-size: $top-bar !important;
-            font-weight: 500;
-
-            li {
-              margin: 0 15px 0 15px;
-
-              &:hover {
-                color: $green-text-color;
-                cursor: pointer;
-              }
-            }
+            margin: 0 0 0 0;
+            font-size: $top-bar;
           }
         }
       }
       .searchButton {
         flex: 0.5;
-        text-align: end;
         margin-right: 40px;
       }
+    }
+  }
 
+  @media (max-width: 768px) {
+    .container {
+      display: none;
     }
   }
 }

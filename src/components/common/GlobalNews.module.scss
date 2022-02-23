@@ -171,9 +171,16 @@
     }
   }
 
+  @media (max-width: 1200px) {
+
+    .container {
+      margin: 10px 48px 10px 48px;
+    }
+  }
+
   @media (max-width: 768px) {
     .container {
-      margin: 10px 5px 10px 5px !important;
+      margin: 10px 5px 10px 5px;
 
       .sectionTitleWrapper {
 
@@ -249,13 +256,6 @@
           }
         }
       }
-    }
-  }
-
-  @media (max-width: 1200px) {
-
-    .container {
-      margin: 10px 48px 10px 48px;
     }
   }
 }

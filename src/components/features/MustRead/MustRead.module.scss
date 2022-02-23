@@ -102,6 +102,12 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+      margin: 10px 5px 10px 5px;
+    }
+  }
+
   @media (max-width: 768px) {
 
     .container {
@@ -121,12 +127,5 @@
         line-height: normal;
       }
     }
-  }
-
-  @media (max-width: 1200px) {
-    .container {
-      margin: 10px 5px 10px 5px;
-    }
-
   }
 }

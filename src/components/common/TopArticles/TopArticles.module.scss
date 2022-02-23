@@ -1,7 +1,6 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted blue;}
 
   .container {
     display: flex;
@@ -27,21 +26,19 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
 
       .GadRecWrapper {
         flex-direction: column;
-
       }
-
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .container {
-      flex-direction: column;
     }
   }
 }

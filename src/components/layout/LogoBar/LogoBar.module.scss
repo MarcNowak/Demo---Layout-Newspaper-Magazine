@@ -18,18 +18,17 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .container {
-      display: none;
-    }
-  }
-
   @media (max-width: 1200px) {
     .container {
       .banner {
         display: none;
       }
+    }
+  }
 
+  @media (max-width: 768px) {
+    .container {
+      display: none;
     }
   }
 }

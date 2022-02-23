@@ -48,6 +48,12 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+    margin: 0px 5px 0 5px;
+    }
+  }
+
   @media (max-width: 768px) {
 
     .container {
@@ -71,12 +77,6 @@
         flex: 1;
         text-align: end;
       }
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .container {
-    margin: 0px 5px 0 5px;
     }
   }
 }

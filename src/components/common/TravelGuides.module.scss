@@ -69,19 +69,21 @@
       }
     }
 
-    .arrowPrev {
+    .arrowPrev,
+    .arrowNext {
       padding: 0 5px 0 5px;
       border: 1px dotted $medium-text-color;
-      margin-right: 2px;
 
       &:hover {
         background-color: $background-color-03;
       }
     }
 
+    .arrowPrev {
+      margin-right: 2px;
+    }
+
     .arrowNext {
-      padding: 0 5px 0 5px;
-      border: 1px dotted $medium-text-color;
       margin-left: 2px;
 
       &:hover {
@@ -90,14 +92,26 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .container {
-      margin: 0 5px 25px 5px !important;
+      margin: 0 48px 25px 48px;
 
       .sectionTitle::after {
         left: 50%;
-        width: 53% !important;
-        transform: translateX(-10%) !important;
+        width: 75%;
+        transform: translateX(-35%);
+       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 0 5px 25px 5px;
+
+      .sectionTitle::after {
+        left: 50%;
+        width: 53%;
+        transform: translateX(-10%);
        }
 
 
@@ -115,17 +129,4 @@
       }
     }
   }
-
-  @media (max-width: 1200px) {
-    .container {
-      margin: 0 48px 25px 48px;
-
-      .sectionTitle::after {
-        left: 50%;
-        width: 75%;
-        transform: translateX(-35%);
-       }
-    }
-  }
-
 }

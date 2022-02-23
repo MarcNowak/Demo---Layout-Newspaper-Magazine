@@ -131,6 +131,17 @@
     }
   }
 
+  @media (max-width: 1200px) {
+
+    .container {
+
+      .sectionTitle::after {
+        width: 65%;
+        transform: translateX(-31%);
+      }
+    }
+  }
+
   @media (max-width: 768px) {
 
     .container {
@@ -156,17 +167,6 @@
         img {
           max-width: 100px;
         }
-      }
-    }
-  }
-
-  @media (max-width: 1200px) {
-
-    .container {
-
-      .sectionTitle::after {
-        width: 65%;
-        transform: translateX(-31%);
       }
     }
   }

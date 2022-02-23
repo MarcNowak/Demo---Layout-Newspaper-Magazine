@@ -24,35 +24,33 @@ const MenuBar = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <ul className={styles.menuButtons}>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon><span>Home</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon><span>Global</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faBicycle}></FontAwesomeIcon><span>Lifestyle</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           {/* TOP EXPAND MENU FASHION START*/}
           <div className={styles.expander}>
-            <div className={styles.expanderArrow}>
+            <div className={styles.test}>
               <a href='#'>
-                <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon> {/* EXPANDER START */}
-              </a>
-            </div>
-            <a href='#'>
-              <div className={styles.expanderText}>Fashion</div>
-            </a>
-            <div className={styles.expanderArrow}>
-              <a href='#'>
-                <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon> {/* EXPANDER START */}
+                <li className={styles.expanderArrow}>
+                  <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon> {/* EXPANDER START */}
+                </li>
+                <li className={styles.expanderText}>Fashion</li>
+                <li className={styles.expanderArrow}>
+                  <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                </li>
               </a>
             </div>
             <div className={styles.expandContent}>
@@ -144,7 +142,7 @@ const MenuBar = () => (
                 </ul>
               </ul>
               <ul className={styles.categories}>
-                <li><a href ='#'>All</a></li>
+                <li><a href='#'>All</a></li>
                 <li>Arts</li>
                 <li>Health</li>
                 <li>Music</li>
@@ -156,22 +154,22 @@ const MenuBar = () => (
           </div>
           {/* TOP EXPAND MENU FASHION END*/}
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon><span>Gaming</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon><span>Fitness</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon><span>Video</span>
           </a>
         </li>
-        <li>
+        <li className={styles.lineHeight}>
           <a href='#'>
             <span>More</span>
           </a>

@@ -1,7 +1,6 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  // * {border: 1px dotted green;}
 
   .container {
     font-family: $primary-font;
@@ -14,7 +13,6 @@
       font-weight: 500;
       margin-bottom: 10px;
     }
-
 
     .sectionTitle::after {
       position: absolute;
@@ -37,11 +35,9 @@
       .photo02,
       .photo03,
       .photo04 {
-        flex: 1;
-        width: 150px;
+        width: 100px;
         height: 100px;
         border-radius: 100%;
-
       }
 
       .photo {
@@ -71,13 +67,11 @@
         &:hover {
           color: $background-color-04;
           cursor: pointer;
-
         }
 
         .artCat {
           font-size: $base-size;
           text-transform: uppercase;
-
         }
 
         .artTitle {
@@ -100,142 +94,22 @@
         }
       }
 
-      .arrowPrev {
-        padding: 0 5px 0 5px;
-        border: 1px dotted $medium-text-color;
-        margin-right: 2px;
-
-        &:hover {
-          background-color: $background-color-04;
-        }
-      }
-
+      .arrowPrev,
       .arrowNext {
         padding: 0 5px 0 5px;
         border: 1px dotted $medium-text-color;
-        margin-left: 2px;
 
         &:hover {
           background-color: $background-color-04;
         }
       }
-    }
-  }
 
-  @media (max-width: 768px) {
-    .container {
-      font-family: $primary-font;
-      margin: 25px 5px 20px 5px !important;
-
-      .sectionTitle {
-        position: relative;
-        font-size: $block-title;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin-bottom: 10px;
+      .arrowPrev {
+        margin-right: 2px;
       }
 
-      .sectionTitle::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 10px;
-        left: 50%;
-        width: 57% !important;
-        height: 4px;
-        transform: translateX(-16%) !important;
-        background: $background-color-04;
-      }
-
-      .articleWrapper {
-        display:flex;
-        margin: 20px 0 20px 0;
-
-        .photo,
-        .photo01,
-        .photo02,
-        .photo03,
-        .photo04 {
-          flex: 1 !important;
-          height: 90px !important;
-          border-radius: 100%;
-        }
-
-        .photo {
-          background-image: url(../../../../public/images/articles/MostShared01.jpg);
-        }
-
-        .photo01 {
-          background-image: url(../../../../public/images/articles/MostShared02.jpg);
-        }
-
-        .photo02 {
-          background-image: url(../../../../public/images/articles/MostShared03.jpg);
-        }
-
-        .photo03 {
-          background-image: url(../../../../public/images/articles/MostShared04.jpg);
-        }
-
-        .photo04 {
-          background-image: url(../../../../public/images/articles/MostShared05.jpg);
-        }
-
-        .artDescWrapper {
-          flex: 3 !important;
-          margin: 15px 0 0 10px;
-          line-height: normal;
-
-          &:hover {
-            color: $background-color-04;
-            cursor: pointer;
-          }
-
-          .artCat {
-            font-size: $base-size;
-            text-transform: uppercase;
-
-          }
-
-          .artTitle {
-            font-size: $popular-categories-list;
-            font-weight: 500;
-          }
-        }
-      }
-
-      .arrows {
-        margin-top: 20px;
-        display: flex;
-        justify-content: start;
-
-        a {
-          color: $main-text-color;
-
-          &:hover {
-            color: $light-text-color;
-          }
-        }
-
-        .arrowPrev {
-          padding: 0 5px 0 5px;
-          border: 1px dotted $medium-text-color;
-          margin-right: 2px;
-
-          &:hover {
-            background-color: $background-color-04;
-          }
-        }
-
-        .arrowNext {
-          padding: 0 5px 0 5px;
-          border: 1px dotted $medium-text-color;
-          margin-left: 2px;
-
-          &:hover {
-            background-color: $background-color-04;
-          }
-        }
+      .arrowNext {
+        margin-left: 2px;
       }
     }
   }
@@ -245,33 +119,36 @@
       margin: 0px 48px 20px 48px;
 
       .sectionTitle::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 10px;
-        left: 50%;
         width: 75%;
-        height: 4px;
         transform: translateX(-37%);
-        background: $background-color-04;
       }
 
       .articleWrapper {
 
-        .photo,
-        .photo01,
-        .photo02,
-        .photo03,
-        .photo04 {
-          flex: 1;
-          height: auto;
-          border-radius: 100%;
-          height: 100px;
-        }
-
         .artDescWrapper {
           flex: 6;
           margin: 25px 0 0 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 25px 5px 20px 5px;
+
+      .sectionTitle::after {
+        width: 57%;
+        transform: translateX(-16%);
+      }
+
+      .articleWrapper {
+        margin: 20px 0 20px 0;
+
+        .artDescWrapper {
+          flex: 3;
+          margin: 15px 0 0 10px;
+          line-height: normal;
         }
       }
     }

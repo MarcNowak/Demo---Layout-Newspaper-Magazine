@@ -48,12 +48,6 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .container {
-      display: none;
-    }
-  }
-
   @media (max-width: 1200px) {
     .container {
       .temperature {
@@ -67,6 +61,12 @@
       .topMenu {
         flex: 4.5;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      display: none;
     }
   }
 }

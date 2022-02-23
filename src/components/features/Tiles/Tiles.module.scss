@@ -47,6 +47,27 @@
     }
   }
 
+  @media (max-width: 1200px) {
+    .container {
+
+      .tilesWrapper {
+        .tile01 {
+          padding: 0 5px 0 5px;
+          line-height: normal;
+          img {
+            max-width: 100%;
+          }
+
+          .tileWrapper {
+            left: 5px;
+            top: 32%;
+            margin: 0 5px 0 5px;
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .container {
       margin: 0 5px 0 5px;
@@ -64,28 +85,7 @@
           .tileWrapper {
             max-width: 100%;
             left: 0px;
-            top: 35% !important;
-            margin: 0 5px 0 5px !important;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .container {
-
-      .tilesWrapper {
-        .tile01 {
-          padding: 0 5px 0 5px;
-          line-height: normal;
-          img {
-            max-width: 100%;
-          }
-
-          .tileWrapper {
-            left: 5px;
-            top: 32%;
+            top: 35%;
             margin: 0 5px 0 5px;
           }
         }

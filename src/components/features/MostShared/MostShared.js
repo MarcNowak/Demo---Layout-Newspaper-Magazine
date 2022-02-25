@@ -13,7 +13,10 @@ import {
 const MostShared = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>most shared</div>
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>most shared</div>
+        <div className={styles.sectionLine}></div>
+      </div>
       <div className={styles.articleWrapper}>
         <div className={styles.photo}>
         </div>

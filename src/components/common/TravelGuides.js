@@ -13,8 +13,11 @@ import {
 const TravelGuides = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>
-        travel guides
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>
+          travel guides
+        </div>
+        <div className={styles.sectionLine}></div>
       </div>
       <div className={styles.tilesWrapper}>
 

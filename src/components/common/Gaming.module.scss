@@ -8,10 +8,10 @@
 
     .titleWrapper {
       display: flex;
-      position: relative;
+
 
       .sectionTitle {
-        position: relative;
+        min-width: 80px;
         font-size: $block-title;
         font-weight: 500;
         flex: 8.5;
@@ -19,20 +19,15 @@
         margin-bottom: 15px;
       }
 
-      .sectionTitle::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 10px;
-        left: 50%;
-        width: 77%;
+      .sectionLine {
+        background-color: $background-color-08;
+        margin-top: 10px;
+        width: 100%;
         height: 4px;
-        transform: translateX(-31%);
-        background: $background-color-08;
       }
 
       .expander { /* EXPANDER START */
-        flex: 1.5;
+        width: 70px;
         font-size: $base-size;
         padding-top: 2px;
         justify-content: end;
@@ -59,7 +54,7 @@
           display: none;
           position: absolute;
           top: 20px;
-          left: -66px;
+          left: -71px;
           text-align: end;
           opacity: 0.95;
           padding: 10px 20px 0 0;
@@ -188,6 +183,10 @@
       font-family: $primary-font;
       margin: 0px 48px 15px 12px;
 
+      .expander {
+        padding: 2px 0 0 10px;
+      }
+
       .articleWrapper {
 
         .articlePhoto {
@@ -213,16 +212,10 @@
 
         .expander { /* EXPANDER START */
           flex: 1.5;
-          font-size: $base-size;
-          padding-top: 2px;
-          justify-content: end;
-          display: flex;
-          color: $main-text-color;
-          position: relative;
 
             .expandContent {
               top: 10px;
-              left: -54px;
+              left: -69px;
             } /* EXPANDER END */
           }
        }

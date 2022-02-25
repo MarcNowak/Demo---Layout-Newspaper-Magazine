@@ -8,7 +8,6 @@
     color: $light-text-color;
     margin: 0 48px 25px 48px;
 
-
     .postCategory {
       text-transform: uppercase;
       font-size: $base-size;
@@ -17,28 +16,24 @@
     .leftSidePictureContainer {
       position: relative;
 
-      // .leftPhoto {
-      //   position: absolute;
-      //   // width: 50%;
-      //   height: 100%;
-      //   // border: 5px
-      // }
+      .leftPhoto {
 
-      // .leftPhoto::after {
-      //   content: '';
-      //   width: 100%;
-      //   height: 100%;
-      //   background-color: #2db300;
-      //   display: none;
-      //   opacity: 0.1;
-      //   left: 0px;
-      //   top: 0px;
-      //   position: absolute;
-      // }
+        & > img {
+          transition: all 3s ease;
+        }
 
-      // .leftPhoto:hover:after{
-      //   display: block;
-      // }
+        &:after {
+          content: '';
+          height: 100%;
+          background-color: #2db300;
+          // opacity: 0.2;
+          position: absolute;
+        }
+
+        &:hover > img {
+          filter: opacity(0.1);
+        }
+      }
 
         img {
         width: 100%;

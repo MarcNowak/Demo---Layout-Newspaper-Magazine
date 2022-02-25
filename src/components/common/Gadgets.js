@@ -13,8 +13,11 @@ import {
 const Gadgets = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>
-        gadgets
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>
+          gadgets
+        </div>
+        <div className={styles.sectionLine}></div>
       </div>
       <div className={styles.mainPhoto}>
         <img src="/images/articles/Gadgets01.jpg" alt="Gadgets01" />
@@ -47,7 +50,7 @@ const Gadgets = () => (
             Sneak Peak: Best Smart Home Gadgets & Features to Install Today
           </div>
           <div className={styles.artDate}>
-           Jan 15, 2022
+            Jan 15, 2022
           </div>
         </div>
       </div>
@@ -60,7 +63,7 @@ const Gadgets = () => (
             Lights Guide for your Home: Ultimate LED vs. Old Generations
           </div>
           <div className={styles.artDate}>
-          Jan 15, 2022
+            Jan 15, 2022
           </div>
         </div>
       </div>

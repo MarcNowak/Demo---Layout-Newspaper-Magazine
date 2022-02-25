@@ -14,6 +14,7 @@ const GlobalNews = () => (
         <div className={styles.sectionTitle}>
           Global News
         </div>
+        <div className={styles.sectionLine}></div>
         <div className={styles.expander}> {/* EXPANDER START */}
           <div className={styles.expanderText}>All</div>
           <div className={styles.expanderArrow}>

@@ -6,7 +6,10 @@ import styles from '../CategoriesArticlesCounter/CategoriesArticlesCounter.modul
 const CategoriesArticlesCounter = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>categories</div>
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>categories</div>
+        <div className={styles.sectionLine}></div>
+      </div>
       <div className={styles.categoriesWrapper}>
         <div className={styles.category}>Global</div>
         <div className={styles.total}>10</div>

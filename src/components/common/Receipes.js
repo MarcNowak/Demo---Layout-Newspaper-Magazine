@@ -13,8 +13,11 @@ import {
 const Receipes = () => (
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>
-        receipes
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>
+          receipes
+        </div>
+        <div className={styles.sectionLine}></div>
       </div>
       <div className={styles.mainPhoto}>
         <img src="/images/articles/Receipes01.jpg" alt="Gadgets01" />

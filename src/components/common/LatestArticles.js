@@ -11,8 +11,9 @@ const LatestArticles = () => (
 
   <div className={styles.root}>
     <div className={styles.container}>
-      <div className={styles.sectionTitle}>
-        latest articles
+      <div className={styles.sectionTitleWrapper}>
+        <div className={styles.sectionTitle}>latest articles</div>
+        <div className={styles.sectionLine}></div>
       </div>
       <div className={styles.rows}>
         <div className={styles.articleWrapper}>
@@ -166,7 +167,7 @@ const LatestArticles = () => (
           </div>
         </div>
         <div className={styles.pages}>
-        Page 1 of 15
+          Page 1 of 15
         </div>
       </div>
     </div>

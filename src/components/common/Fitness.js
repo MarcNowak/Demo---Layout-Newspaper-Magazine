@@ -18,6 +18,7 @@ const Fitness = () => (
         <div className={styles.sectionTitle}>
           fitness
         </div>
+        <div className={styles.sectionLine}></div>
         <div className={styles.expander}> {/* EXPANDER START */}
           <div className={styles.expanderText}>All</div>
           <div className={styles.expanderArrow}>

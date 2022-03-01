@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
+import { categories, articleTitle } from '../../../db/dataStore';
 
 import styles from '../MenuBar/MenuBar.module.scss';
 
@@ -26,17 +27,17 @@ const MenuBar = () => (
       <ul className={styles.menuButtons}>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon><span>Home</span>
+            <FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon><span>{categories.category09}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon><span>Global</span>
+            <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon><span>{categories.category07}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faBicycle}></FontAwesomeIcon><span>Lifestyle</span>
+            <FontAwesomeIcon icon={faBicycle}></FontAwesomeIcon><span>{categories.category11}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>
@@ -47,7 +48,7 @@ const MenuBar = () => (
                 <li className={styles.expanderArrow}>
                   <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon> {/* EXPANDER START */}
                 </li>
-                <li className={styles.expanderText}>Fashion</li>
+                <li className={styles.expanderText}>{categories.category04}</li>
                 <li className={styles.expanderArrow}>
                   <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
                 </li>
@@ -61,11 +62,11 @@ const MenuBar = () => (
                       <a href='#'><img src='/images/mainlayout/expandMenu01.jpg' alt='01' /></a>
                     </li>
                     <li>
-                      TRAVEL
+                      {categories.category17}
                     </li>
                     <li className={styles.artCat}>
                       <a href='#'>
-                        Exotic Trips are Getting More and More Popular in South America
+                        {articleTitle.title01}
                       </a>
                     </li>
                   </ul>
@@ -74,11 +75,11 @@ const MenuBar = () => (
                       <a href='#'><img src='/images/mainlayout/expandMenu02.jpg' alt='01' /></a>
                     </li>
                     <li>
-                      TRAVEL
+                      {categories.category17}
                     </li>
                     <li className={styles.artCat}>
                       <a href='#'>
-                        Out of This World Experience with these Exotic Travel Destinations
+                        {articleTitle.title02}
                       </a>
                     </li>
                   </ul>
@@ -87,11 +88,11 @@ const MenuBar = () => (
                       <a href='#'><img src='/images/mainlayout/expandMenu03.jpg' alt='01' /></a>
                     </li>
                     <li>
-                      TRAVEL
+                      {categories.category17}
                     </li>
                     <li className={styles.artCat}>
                       <a href='#'>
-                        Work Out as Much as Possible During Your All Inclusive Vacations
+                        {articleTitle.title03}
                       </a>
                     </li>
                   </ul>
@@ -100,11 +101,11 @@ const MenuBar = () => (
                       <a href='#'><img src='/images/mainlayout/expandMenu04.jpg' alt='01' /></a>
                     </li>
                     <li>
-                      TRAVEL
+                      {categories.category17}
                     </li>
                     <li className={styles.artCat}>
                       <a href='#'>
-                        Bali Travel Experience: Combine Luxury with a Real Life Adventure
+                        {articleTitle.title04}
                       </a>
                     </li>
                   </ul>
@@ -113,11 +114,11 @@ const MenuBar = () => (
                       <a href='#'><img src='/images/mainlayout/expandMenu05.jpg' alt='01' /></a>
                     </li>
                     <li>
-                      TRAVEL
+                      {categories.category17}
                     </li>
                     <li className={styles.artCat}>
                       <a href='#'>
-                        A Breakthough for This Year: Space Travel Might Become a Thing
+                        {articleTitle.title05}
                       </a>
                     </li>
                   </ul>
@@ -142,13 +143,13 @@ const MenuBar = () => (
                 </ul>
               </ul>
               <ul className={styles.categories}>
-                <li><a href='#'>All</a></li>
-                <li>Arts</li>
-                <li>Health</li>
-                <li>Music</li>
-                <li>Receipes</li>
-                <li>Travel</li>
-                <li>What&rsquo;s Hot</li>
+                <li><a href='#'>{categories.category01}</a></li>
+                <li>{categories.category02}</li>
+                <li>{categories.category08}</li>
+                <li>{categories.category14}</li>
+                <li>{categories.category16}</li>
+                <li>{categories.category17}</li>
+                <li>{categories.category19}</li>
               </ul>
             </div>
           </div>
@@ -156,17 +157,17 @@ const MenuBar = () => (
         </li>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon><span>Gaming</span>
+            <FontAwesomeIcon icon={faMicrochip}></FontAwesomeIcon><span>{categories.category06}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon><span>Fitness</span>
+            <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon><span>{categories.category05}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>
           <a href='#'>
-            <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon><span>Video</span>
+            <FontAwesomeIcon icon={faVideo}></FontAwesomeIcon><span>{categories.category18}</span>
           </a>
         </li>
         <li className={styles.lineHeight}>

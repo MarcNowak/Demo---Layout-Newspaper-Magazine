@@ -3,6 +3,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 import TopBarSocialList from '../../features/SocialMedia/TopBarSocialList';
+import { topBarMenu } from '../../../db/dataStore';
 
 import styles from '../TopBar/TopBar.module.scss';
 
@@ -24,19 +25,19 @@ const TopBar = () => (
       </div>
       <div className={styles.topMenu}>
         <a href='#'>
-          <span className={styles.btn}>Sign in / Join</span>
+          <span className={styles.btn}>{topBarMenu.signIn}</span>
         </a>
         <a href='#'>
-          <span className={styles.btn}>Blog</span>
+          <span className={styles.btn}>{topBarMenu.blog}</span>
         </a>
         <a href='#'>
-          <span className={styles.btn}>About</span>
+          <span className={styles.btn}>{topBarMenu.about}</span>
         </a>
         <a href='#'>
-          <span className={styles.btn}>Contact</span>
+          <span className={styles.btn}>{topBarMenu.contact}</span>
         </a>
         <a href='#'>
-          <span className={styles.btn}>Buy now<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
+          <span className={styles.btn}>{topBarMenu.buyNow}<FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></span>
         </a>
       </div>
       <div className={styles.topBarSocialList}>

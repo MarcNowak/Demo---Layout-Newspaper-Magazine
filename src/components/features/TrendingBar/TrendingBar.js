@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 // import PropTypes from 'prop-types';
+import { articleTitle } from '../../../db/dataStore';
 
 import styles from './TrendingBar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +19,7 @@ const TrendingBar = () => (
         </div>
       </div>
       <div className={styles.trendingDesc}>
-        <span>The Weirdest Places Ashes Have Been Scattered in South America</span>
+        <span>{articleTitle.title10}</span>
       </div>
       <div className={styles.arrows}>
         <div className={styles.arrowPrev}>

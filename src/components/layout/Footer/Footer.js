@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { footer } from '../../../db/dataStore';
+import { footerItems } from '../../../db/testDataStore';
 // import PropTypes from 'prop-types';
 
 import styles from './Footer.module.scss';
@@ -11,17 +12,13 @@ const Footer = () => (
       <div className={styles.leftSide}>
         <div>{footer.textLeft}</div>
       </div>
-      <div className={styles.rightSide}>
-        <div>
-          <a href='#'>{footer.blog}</a>
+      {footerItems.map((footerItem, index) => (
+        <div className={styles.rightSide} key={index}>
+          <div>
+            <a href={footerItem.href}>{footerItem.label}</a>
+          </div>
         </div>
-        <div>
-          <a href='#'>{footer.about}</a>
-        </div>
-        <div>
-          <a href='#'>{footer.contact}</a>
-        </div>
-      </div>
+      ))}
     </div >
   </footer >
 );

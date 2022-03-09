@@ -3,6 +3,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './TravelGuides.module.scss';
+import { travelGuidesItems } from '../../db/testDataStore';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -21,48 +22,23 @@ const TravelGuides = () => (
       </div>
       <div className={styles.tilesWrapper}>
 
-        <div className={styles.tile01}>
-          <img
-            src='images/articles/TravelGuides-01.jpg' alt='TG 01'
-            title='Out of This World Experience with these Exotic Travel Destinations'
-          />
-          <div className={styles.tileWrapper}>
-            <div className={styles.tileCat}>
-              travel
-            </div>
-            <div className={styles.artTitle}>
-              Out of This World Experience with these Exotic Travel Destinations
-            </div>
-          </div>
-        </div>
-        <div className={styles.tile01}>
-          <img
-            src='images/articles/TravelGuides-02.jpg' alt='TG 01'
-            title='Bali Travel Experience: Combine Luxury with a Real Life Adventure'
-          />
-          <div className={styles.tileWrapper}>
-            <div className={styles.tileCat}>
-              travel
-            </div>
-            <div className={styles.artTitle}>
-              Bali Travel Experience: Combine Luxury with a Real Life Adventure
+        {travelGuidesItems.map((travelGuidesItem, index) => (
+          <div className={styles.tile01} key={index}>
+            <img
+              src={travelGuidesItem.image} alt={travelGuidesItem.imageAlt}
+              title={travelGuidesItem.title}
+            />
+            <div className={styles.tileWrapper}>
+              <div className={styles.tileCat}>
+                {travelGuidesItem.tileCat}
+              </div>
+              <div className={styles.artTitle}>
+                {travelGuidesItem.artTitle}
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.tile01}>
-          <img
-            src='images/articles/TravelGuides-03.jpg' alt='TG 01'
-            title='Work Out as Much as Possible During Your All Inclusive Vacations'
-          />
-          <div className={styles.tileWrapper}>
-            <div className={styles.tileCat}>
-              travel
-            </div>
-            <div className={styles.artTitle}>
-              Work Out as Much as Possible During Your All Inclusive Vacations
-            </div>
-          </div>
-        </div>
+        ))}
+
       </div>
       <div className={styles.arrows}>
         <div className={styles.arrowPrev}>

@@ -3,6 +3,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './MustRead.module.scss';
+import { mustReadArticles } from '../../../db/testDataStore';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -17,17 +18,20 @@ const MustRead = () => (
         <div className={styles.sectionTitle}>must read</div>
         <div className={styles.sectionLine}></div>
       </div>
-      <div className={styles.articleWrapper}>
-        <div className={styles.articleCategory}>style</div>
-        <div className={styles.articleTitle}>What Makeup to Wear Daily, No Matter What You’ve Got Planned</div>
-        <div className={styles.articleDetailsWrapper}>
-          <div className={styles.editorData}>David Lee</div>
-          <div className={styles.articleDate}>04.02.2022</div>
+
+      {mustReadArticles.map((mustReadArticle, index) => (
+        <div className={styles.articleWrapper} key={index}>
+          <div className={styles.articleCategory}>{mustReadArticle.artCat}</div>
+          <div className={styles.articleTitle}>{mustReadArticle.artTitle}</div>
+          <div className={styles.articleDetailsWrapper}>
+            <div className={styles.editorData}>{mustReadArticle.artAuthor}</div>
+            <div className={styles.articleDate}>{mustReadArticle.artDate}</div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div className={styles.container}>
-      <div className={styles.articleWrapper}>
+      ))}
+
+
+      {/* <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
           Style Spy: Fashion Model Goes Casual in Distinct and Original Way
@@ -37,8 +41,7 @@ const MustRead = () => (
           <div className={styles.articleDate}>04.02.2022</div>
         </div>
       </div>
-    </div>
-    <div className={styles.container}>
+
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -49,8 +52,7 @@ const MustRead = () => (
           <div className={styles.articleDate}>04.02.2022</div>
         </div>
       </div>
-    </div>
-    <div className={styles.container}>
+
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -61,8 +63,7 @@ const MustRead = () => (
           <div className={styles.articleDate}>04.02.2022</div>
         </div>
       </div>
-    </div>
-    <div className={styles.container}>
+
       <div className={styles.articleWrapper}>
         <div className={styles.articleCategory}>style</div>
         <div className={styles.articleTitle}>
@@ -72,7 +73,8 @@ const MustRead = () => (
           <div className={styles.editorData}>David Lee</div>
           <div className={styles.articleDate}>04.02.2022</div>
         </div>
-      </div>
+      </div> */}
+
       <div className={styles.arrows}>
         <div className={styles.arrowPrev}>
           <a href='#'>
@@ -86,6 +88,7 @@ const MustRead = () => (
         </div>
       </div>
     </div>
+
   </div>
 );
 

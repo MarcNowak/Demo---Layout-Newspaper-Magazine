@@ -3,6 +3,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 import styles from './Gaming.module.scss';
+import { expandContentItems } from '../../db/testDataStore';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -25,13 +26,13 @@ const Gaming = () => (
             <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
           </div>
           <div className={styles.expandContent}>
-            <ul>
-              <li><a href='#'>All</a></li>
-              <li><a href='#'>Global</a></li>
-              <li><a href='#'>Showbiz</a></li>
-              <li><a href='#'>Gadgets</a></li>
-              <li><a href='#'>Fitness</a></li>
-            </ul>
+            {expandContentItems.map((expandContentItem, index) => (
+              <ul key={index}>
+                <li>
+                  <a href={expandContentItem.href}>{expandContentItem.label}</a>
+                </li>
+              </ul>
+            ))}
           </div>
         </div>    {/* EXPANDER END */}
       </div>

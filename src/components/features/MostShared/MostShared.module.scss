@@ -29,34 +29,12 @@
       display:flex;
       margin: 20px 0 20px 0;
 
-      .photo,
-      .photo01,
-      .photo02,
-      .photo03,
-      .photo04 {
+      .photo {
+        img {
         width: 100px;
         height: 100px;
         border-radius: 100%;
-      }
-
-      .photo {
-        background-image: url(../../../../public/images/articles/MostShared01.jpg);
-      }
-
-      .photo01 {
-        background-image: url(../../../../public/images/articles/MostShared02.jpg);
-      }
-
-      .photo02 {
-        background-image: url(../../../../public/images/articles/MostShared03.jpg);
-      }
-
-      .photo03 {
-        background-image: url(../../../../public/images/articles/MostShared04.jpg);
-      }
-
-      .photo04 {
-        background-image: url(../../../../public/images/articles/MostShared05.jpg);
+        }
       }
 
       .artDescWrapper {

@@ -38,7 +38,7 @@
     }
 
     .articleTitle {
-      margin: 10px 0 10px 0;
+      margin: 0 0 5px 0;
       font-size: $must-read-articles-title;
       font-weight: 500;
 
@@ -50,6 +50,7 @@
 
     .articleDetailsWrapper {
       display: flex;
+      margin-bottom: 10px;
     }
 
     .editorData {

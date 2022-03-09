@@ -23,13 +23,106 @@ export const categories = {
   category22: 'Facts',
 };
 
+export const nav = [
+  {
+    label: 'Home',
+    href: '#home',
+  },
+  {
+    label: 'Global News',
+    href: '#globalNews',
+    children: [
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+      {
+        label: 'Home',
+        image: '/images/mainlayout/expandMenu01.jpg',
+        articleTitle: 'Article Title',
+      },
+    ],
+  },
+  {
+    label: 'Fashin',
+    href: '#fashion',
+  },
+  {
+    label: 'Sport',
+    href: '#sport',
+  },
+];
+
+export const menuItems = [
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+  {
+    label: 'Home',
+    image: '/images/mainlayout/expandMenu01.jpg',
+    articleTitle: 'Article Title',
+  },
+];
+
 export const topBarMenu= {
   signIn: 'Sign in / Join',
   blog: 'Blog',
   about: 'About',
   contact: 'Contact',
   buyNow: 'Buy Now',
-
 };
 
 export const articleTitle = {
